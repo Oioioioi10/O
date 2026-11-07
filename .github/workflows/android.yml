@@ -1,0 +1,110 @@
+name: Android build & device test
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: android-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+      - uses: gradle/actions/setup-gradle@v4
+      - name: ./gradlew assembleDebug (+ test APK, unit tests)
+        run: |
+          chmod +x gradlew
+          set -o pipefail
+          ./gradlew --no-daemon --stacktrace assembleDebug assembleDebugAndroidTest testDebugUnitTest 2>&1 | tee build.log
+      - name: Collect build outputs
+        if: always()
+        run: |
+          mkdir -p out/unit
+          cp build.log out/ || true
+          cp app/build/outputs/apk/debug/app-debug.apk out/ || true
+          cp app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk out/ || true
+          cp app/build/test-results/testDebugUnitTest/*.xml out/unit/ 2>/dev/null || true
+          ls -la app/build/outputs/apk/debug/ > out/apk_listing.txt 2>&1 || true
+          (cd out && sha256sum *.apk > SHA256SUMS) || true
+          "$ANDROID_HOME"/build-tools/*/apksigner verify --print-certs out/app-debug.apk > out/apksigner.txt 2>&1 || true
+          "$ANDROID_HOME"/build-tools/*/aapt2 dump badging out/app-debug.apk > out/badging.txt 2>&1 || true
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: build
+          path: out
+
+  device-test:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        api: [29, 35]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: build
+          path: out
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Install and test on Android emulator (API ${{ matrix.api }})
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: ${{ matrix.api }}
+          arch: x86_64
+          target: ${{ matrix.api == 29 && 'default' || 'google_apis' }}
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          disable-animations: true
+          script: bash ci/device-test.sh ${{ matrix.api }}
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: device-api${{ matrix.api }}
+          path: device-out
+
+  publish:
+    needs: [build, device-test]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: results
+      - name: Push results to the ci-results branch
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cd results
+          echo "run=${{ github.run_id }} sha=${{ github.sha }} build=${{ needs.build.result }} device=${{ needs.device-test.result }}" > STATUS.txt
+          git init -q -b ci-results
+          git config user.name "ci-bot"
+          git config user.email "ci-bot@users.noreply.github.com"
+          git add -A
+          git commit -q -m "CI results for ${{ github.sha }}"
+          git push -q -f "https://x-access-token:${GH_TOKEN}@github.com/${{ github.repository }}.git" ci-results
+      - name: Publish APK as a GitHub release
+        if: needs.build.result == 'success' && needs.device-test.result == 'success'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: build-${{ github.run_number }}
+          name: FreeLLMAPI debug build ${{ github.run_number }}
+          body: Debug APK built with ./gradlew assembleDebug and tested on Android 10 (API 29) and Android 15 (API 35) emulators.
+          files: results/build/app-debug.apk
