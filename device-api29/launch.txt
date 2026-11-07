@@ -1,0 +1,7 @@
+Starting: Intent { cmp=com.avatarsdev.freellmapi/.ui.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.avatarsdev.freellmapi/.ui.MainActivity
+TotalTime: 3592
+WaitTime: 3596
+Complete

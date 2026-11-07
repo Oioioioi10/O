@@ -1,0 +1,13 @@
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  User 0 active services:
+  * ServiceRecord{865bbaa u0 com.avatarsdev.freellmapi/.service.GatewayService}
+    intent={cmp=com.avatarsdev.freellmapi/.service.GatewayService}
+    packageName=com.avatarsdev.freellmapi
+    processName=com.avatarsdev.freellmapi
+    baseDir=/data/app/com.avatarsdev.freellmapi-87vnPAKTzBHpEZ1i7iODfw==/base.apk
+    dataDir=/data/user/0/com.avatarsdev.freellmapi
+    app=ProcessRecord{e97994b 3084:com.avatarsdev.freellmapi/u0a116}
+    isForeground=true foregroundId=42 foregroundNoti=Notification(channel=gateway pri=0 contentView=null vibrate=null sound=null defaults=0x0 flags=0x6a color=0x00000000 actions=1 vis=PRIVATE)
+    createTime=-8s280ms startingBgTimeout=--
+    lastActivity=-8s280ms restartTime=-8s280ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1

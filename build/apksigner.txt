@@ -1,0 +1,1 @@
+Unsupported command: /usr/local/lib/android/sdk/build-tools/35.0.0/apksigner. See --help for supported commands

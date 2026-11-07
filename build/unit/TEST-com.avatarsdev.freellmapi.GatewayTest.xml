@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.avatarsdev.freellmapi.GatewayTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-11-07T02:13:49" hostname="runnervmwuk1x" time="0.082">
+  <properties/>
+  <testcase name="noProvidersGives503AndUnknownModel404" classname="com.avatarsdev.freellmapi.GatewayTest" time="0.017"/>
+  <testcase name="fallbackDisabledStopsAfterFirstError" classname="com.avatarsdev.freellmapi.GatewayTest" time="0.013"/>
+  <testcase name="aliasesAndCrossModelFallbackAreDeduplicated" classname="com.avatarsdev.freellmapi.GatewayTest" time="0.002"/>
+  <testcase name="slugPrefixAllowsModelIdsWithSlashes" classname="com.avatarsdev.freellmapi.GatewayTest" time="0.001"/>
+  <testcase name="exactModelMatchesEveryProviderServingIt" classname="com.avatarsdev.freellmapi.GatewayTest" time="0.0"/>
+  <testcase name="streamFallsBackBeforeFirstToken" classname="com.avatarsdev.freellmapi.GatewayTest" time="0.007"/>
+  <testcase name="providersWithoutKeysAreSkippedExceptKeyless" classname="com.avatarsdev.freellmapi.GatewayTest" time="0.001"/>
+  <testcase name="roundRobinRotatesAndFastestSortsByLatency" classname="com.avatarsdev.freellmapi.GatewayTest" time="0.004"/>
+  <testcase name="autoUsesDefaultModelsInPriorityOrder" classname="com.avatarsdev.freellmapi.GatewayTest" time="0.001"/>
+  <testcase name="badRequestMovesToNextCandidateAndAllFailuresReport502" classname="com.avatarsdev.freellmapi.GatewayTest" time="0.007"/>
+  <testcase name="streamErrorAfterTokensDoesNotSwitchProvider" classname="com.avatarsdev.freellmapi.GatewayTest" time="0.002"/>
+  <testcase name="maxAttemptsIsRespected" classname="com.avatarsdev.freellmapi.GatewayTest" time="0.005"/>
+  <testcase name="fallsBackAcrossKeysAndProviders" classname="com.avatarsdev.freellmapi.GatewayTest" time="0.013"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

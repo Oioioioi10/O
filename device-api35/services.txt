@@ -1,0 +1,36 @@
+ACTIVITY MANAGER SERVICES (dumpsys activity services)
+  User 0 active services:
+  * ServiceRecord{a29044c u0 com.avatarsdev.freellmapi/.service.GatewayService c:com.avatarsdev.freellmapi}
+    intent={cmp=com.avatarsdev.freellmapi/.service.GatewayService}
+    packageName=com.avatarsdev.freellmapi
+    processName=com.avatarsdev.freellmapi
+    targetSdkVersion=35
+    baseDir=/data/app/~~w6jl58hCzNiAxk3uopGU-g==/com.avatarsdev.freellmapi-JceIxY_AxNdBXwY29qN2pQ==/base.apk
+    dataDir=/data/user/0/com.avatarsdev.freellmapi
+    app=ProcessRecord{df102cc 2104:com.avatarsdev.freellmapi/u0a209}
+    useNewWiuLogic_forCapabilities()=true
+    useNewWiuLogic_forStart()=true
+    useNewBfslLogic()=true
+    mAllowWiu_noBinding=PROC_STATE_TOP
+    mAllowWiu_inBindService=DENIED
+    mAllowWiu_byBindings=DENIED
+    getFgsAllowWiu_legacy=PROC_STATE_TOP
+    getFgsAllowWiu_new=PROC_STATE_TOP
+    getFgsAllowWiu_forStart=PROC_STATE_TOP
+    getFgsAllowWiu_forCapabilities=PROC_STATE_TOP
+    allowUiJobScheduling=true
+    recentCallingPackage=com.avatarsdev.freellmapi
+    recentCallingUid=10209
+    mAllowStart_noBinding=PROC_STATE_TOP
+    mAllowStart_inBindService=DENIED
+    mAllowStart_byBindings=DENIED
+    getFgsAllowStart_legacy=PROC_STATE_TOP
+    getFgsAllowStart_new=PROC_STATE_TOP
+    getFgsAllowStart=PROC_STATE_TOP
+    startForegroundCount=1
+    infoAllowStartForeground=[callingPackage: com.avatarsdev.freellmapi; callingUid: 10209; uidState: TOP ; uidBFSL: [BFSL]; intent: Intent { cmp=com.avatarsdev.freellmapi/.service.GatewayService }; code:PROC_STATE_TOP; tempAllowListReason:<null>; targetSdkVersion:35; callerTargetSdkVersion:35; startForegroundCount:0; bindFromPackage:null: isBindService:false]
+    isForeground=true foregroundId=42 types=0x40000000 foregroundNoti=Notification(channel=gateway shortcut=null contentView=null vibrate=null sound=null defaults=0 flags=ONGOING_EVENT|ONLY_ALERT_ONCE|NO_CLEAR|FOREGROUND_SERVICE color=0x00000000 actions=1 vis=PRIVATE)
+    createTime=-5s150ms startingBgTimeout=--
+    lastActivity=-5s149ms restartTime=-5s149ms createdFromFg=true
+    startRequested=true delayedStop=false stopIfKilled=true callStart=true lastStartId=1
+ startCommandResult=2

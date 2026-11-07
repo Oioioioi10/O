@@ -1,0 +1,11 @@
+{
+  "tapped_start": true,
+  "tapped_allow": true,
+  "foreground_service": true,
+  "health": [
+    200,
+    "{\"status\":\"ok\",\"service\":\"FreeLLMAPI\"}"
+  ],
+  "models_without_key": 401,
+  "models_wrong_key": 401
+}

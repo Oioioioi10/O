@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.avatarsdev.freellmapi.LocalServerTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2026-11-07T02:13:49" hostname="runnervmwuk1x" time="0.154">
+  <properties/>
+  <testcase name="onlyLoopbackOrPrivateLanClientsAreAllowed" classname="com.avatarsdev.freellmapi.LocalServerTest" time="0.004"/>
+  <testcase name="healthIsPublicButV1NeedsKey" classname="com.avatarsdev.freellmapi.LocalServerTest" time="0.033"/>
+  <testcase name="badRequestsAreRejectedCleanly" classname="com.avatarsdev.freellmapi.LocalServerTest" time="0.014"/>
+  <testcase name="streamingUsesOpenAiChunks" classname="com.avatarsdev.freellmapi.LocalServerTest" time="0.024"/>
+  <testcase name="parserRejectsChunkedAndOversizedBodies" classname="com.avatarsdev.freellmapi.LocalServerTest" time="0.001"/>
+  <testcase name="chatCompletionFallsBackAndReportsRoute" classname="com.avatarsdev.freellmapi.LocalServerTest" time="0.043"/>
+  <testcase name="repeatedBadKeysAreLockedOut" classname="com.avatarsdev.freellmapi.LocalServerTest" time="0.031"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

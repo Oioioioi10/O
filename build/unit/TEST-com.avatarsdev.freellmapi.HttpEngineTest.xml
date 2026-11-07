@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.avatarsdev.freellmapi.HttpEngineTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-07T02:13:49" hostname="runnervmwuk1x" time="0.472">
+  <properties/>
+  <testcase name="mapsRateLimitWithRetryAfterAndRedactsMessage" classname="com.avatarsdev.freellmapi.HttpEngineTest" time="0.385"/>
+  <testcase name="networkFailureIsRetryable" classname="com.avatarsdev.freellmapi.HttpEngineTest" time="0.028"/>
+  <testcase name="streamsServerSentEvents" classname="com.avatarsdev.freellmapi.HttpEngineTest" time="0.048"/>
+  <testcase name="postsJsonWithBearerKey" classname="com.avatarsdev.freellmapi.HttpEngineTest" time="0.011"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
