@@ -152,11 +152,20 @@ fun RoutingScreen(onBack: () -> Unit) {
                             selected = settings.strategy == s,
                             onClick = { container.settings.update { it.copy(strategy = s) } },
                             shape = SegmentedButtonDefaults.itemShape(index = i, count = strategies.size),
-                        ) { Text(s.label, maxLines = 1) }
+                        ) {
+                            Text(
+                                when (s) {
+                                    RoutingStrategy.PRIORITY -> "Priority"
+                                    RoutingStrategy.ROUND_ROBIN -> "Rotate"
+                                    RoutingStrategy.FASTEST -> "Fastest"
+                                },
+                                maxLines = 1,
+                            )
+                        }
                     }
                 }
                 Spacer(Modifier.height(8.dp))
-                Text(settings.strategy.description, style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                Text("${settings.strategy.label}: ${settings.strategy.description}", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
             }
         }
         item { SectionTitle("Automatic fallback") }

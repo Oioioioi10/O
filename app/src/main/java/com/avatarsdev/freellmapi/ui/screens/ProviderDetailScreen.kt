@@ -149,21 +149,33 @@ fun ProviderDetailScreen(providerId: Long, onBack: () -> Unit) {
                 }
                 Spacer(Modifier.height(10.dp))
                 Row(verticalAlignment = Alignment.CenterVertically) {
-                    Column(Modifier.weight(1f)) { LabeledValue("Base URL", p.baseUrl, mono = true) }
+                    Column(Modifier.weight(1f)) {
+                        Text("Base URL", style = MaterialTheme.typography.labelMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                        Text(p.baseUrl, style = MonoStyle)
+                    }
                     IconButton(onClick = { showEditUrl = true }) { Icon(Icons.Outlined.Edit, contentDescription = "Edit base URL") }
                 }
-                Spacer(Modifier.height(8.dp))
-                Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-                    FilledTonalButton(onClick = { vm.sync() }, enabled = !busy, modifier = Modifier.testTag("sync_models")) {
-                        if (busy) CircularProgressIndicator(Modifier.size(16.dp), strokeWidth = 2.dp) else Icon(Icons.Outlined.NetworkCheck, contentDescription = null)
-                        Spacer(Modifier.width(8.dp))
-                        Text("Test & sync models")
-                    }
-                    if (type.docsUrl.isNotEmpty()) {
-                        OutlinedButton(onClick = { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(type.docsUrl))) }) {
-                            Text("Docs")
-                            Spacer(Modifier.width(4.dp))
-                            Icon(Icons.Outlined.OpenInNew, contentDescription = null, modifier = Modifier.size(16.dp))
+                Spacer(Modifier.height(10.dp))
+                FilledTonalButton(onClick = { vm.sync() }, enabled = !busy, modifier = Modifier.fillMaxWidth().testTag("sync_models")) {
+                    if (busy) CircularProgressIndicator(Modifier.size(16.dp), strokeWidth = 2.dp) else Icon(Icons.Outlined.NetworkCheck, contentDescription = null)
+                    Spacer(Modifier.width(8.dp))
+                    Text("Test & sync models")
+                }
+                if (type.docsUrl.isNotEmpty() || type.keyUrl.isNotEmpty()) {
+                    Row {
+                        if (type.docsUrl.isNotEmpty()) {
+                            TextButton(onClick = { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(type.docsUrl))) }) {
+                                Text("API docs")
+                                Spacer(Modifier.width(4.dp))
+                                Icon(Icons.Outlined.OpenInNew, contentDescription = null, modifier = Modifier.size(16.dp))
+                            }
+                        }
+                        if (type.keyUrl.isNotEmpty()) {
+                            TextButton(onClick = { context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(type.keyUrl))) }) {
+                                Text("Get key")
+                                Spacer(Modifier.width(4.dp))
+                                Icon(Icons.Outlined.OpenInNew, contentDescription = null, modifier = Modifier.size(16.dp))
+                            }
                         }
                     }
                 }

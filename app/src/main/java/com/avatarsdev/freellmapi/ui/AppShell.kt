@@ -89,10 +89,10 @@ inline fun <reified VM : ViewModel> containerViewModel(crossinline create: (AppC
 }
 
 enum class TopDestination(val route: String, val label: String, val icon: ImageVector) {
-    DASHBOARD("dashboard", "Dashboard", Icons.Outlined.Dashboard),
+    DASHBOARD("dashboard", "Home", Icons.Outlined.Dashboard),
     PROVIDERS("providers", "Providers", Icons.Outlined.DeviceHub),
     MODELS("models", "Models", Icons.Outlined.Memory),
-    PLAYGROUND("playground", "Playground", Icons.Outlined.PlayCircleOutline),
+    PLAYGROUND("playground", "Play", Icons.Outlined.PlayCircleOutline),
     MORE("more", "More", Icons.Outlined.Apps),
 }
 
@@ -156,7 +156,7 @@ fun FreeLlmAppRoot() {
                                 selected = d == current,
                                 onClick = { go(d) },
                                 icon = { Icon(d.icon, contentDescription = d.label) },
-                                label = { Text(d.label, maxLines = 1) },
+                                label = { Text(d.label, maxLines = 1, style = MaterialTheme.typography.labelSmall) },
                                 colors = NavigationBarItemDefaults.colors(indicatorColor = MaterialTheme.colorScheme.primaryContainer),
                                 modifier = Modifier.testTag("nav_${d.route}"),
                             )

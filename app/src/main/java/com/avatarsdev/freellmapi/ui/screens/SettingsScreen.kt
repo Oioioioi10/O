@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.selection.selectable
@@ -65,7 +66,8 @@ fun SettingsScreen(onBack: () -> Unit) {
                         Modifier
                             .fillMaxWidth()
                             .selectable(selected = settings.themeMode == mode, role = Role.RadioButton) { container.settings.update { it.copy(themeMode = mode) } }
-                            .testTag("theme_${mode.name.lowercase()}"),
+                            .testTag("theme_${mode.name.lowercase()}")
+                            .padding(vertical = 10.dp),
                         verticalAlignment = Alignment.CenterVertically,
                     ) {
                         Icon(icon, contentDescription = null, tint = MaterialTheme.colorScheme.onSurfaceVariant)

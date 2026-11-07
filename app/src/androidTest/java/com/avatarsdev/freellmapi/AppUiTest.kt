@@ -164,7 +164,7 @@ class AppUiTest {
     fun addProviderThroughDialog() {
         tab("providers", "screen_providers")
         rule.onNodeWithTag("add_provider").performClick()
-        rule.waitForIdle()
+        rule.waitUntil(10_000) { rule.onAllNodes(hasTestTag("pick_custom")).fetchSemanticsNodes().isNotEmpty() }
         shot("13_add_provider_sheet", rule)
         rule.onNodeWithTag("pick_custom").performScrollTo().performClick()
         rule.waitForIdle()

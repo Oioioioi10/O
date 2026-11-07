@@ -44,6 +44,8 @@ android {
     }
 
     packaging {
+        // Store dex compressed: the APK download shrinks roughly 3x (install size is unchanged).
+        dex { useLegacyPackaging = true }
         resources {
             excludes += setOf(
                 "/META-INF/{AL2.0,LGPL2.1}",
