@@ -38,6 +38,7 @@ import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -98,6 +99,14 @@ fun ProvidersScreen(onOpenProvider: (Long) -> Unit) {
     val items by vm.items.collectAsStateWithLifecycle()
     var showPicker by rememberSaveable { mutableStateOf(false) }
     var pickedType by rememberSaveable { mutableStateOf<String?>(null) }
+    // Navigate from a stable effect, not from inside the closing dialog's coroutine.
+    var openAfterAdd by remember { mutableStateOf<Long?>(null) }
+    LaunchedEffect(openAfterAdd) {
+        openAfterAdd?.let {
+            openAfterAdd = null
+            onOpenProvider(it)
+        }
+    }
 
     Box(Modifier.fillMaxSize().testTag("screen_providers")) {
         LazyColumn(
@@ -190,7 +199,7 @@ fun ProvidersScreen(onOpenProvider: (Long) -> Unit) {
             onAdd = { type, name, url, key -> vm.add(type, name, url, key) },
             onAdded = { newId ->
                 pickedType = null
-                onOpenProvider(newId)
+                openAfterAdd = newId
             },
         )
     }

@@ -7,10 +7,19 @@ OUT=device-out
 PKG=com.avatarsdev.freellmapi
 mkdir -p "$OUT/screens"
 fail=0
-step() { echo "::group::$1"; }
+step() { echo "::group::$1"; ensure_device; }
+ensure_device() {
+  adb reconnect offline > /dev/null 2>&1 || true
+  timeout 120 adb wait-for-device || true
+  for _ in $(seq 1 60); do
+    [ "$(adb shell getprop sys.boot_completed 2>/dev/null | tr -d '\r')" = "1" ] && return 0
+    sleep 2
+  done
+  echo "EMULATOR NOT RESPONDING"
+}
 endstep() { echo "::endgroup::"; }
 
-adb wait-for-device
+ensure_device
 adb shell getprop ro.build.version.release > "$OUT/android_version.txt"
 adb shell getprop ro.build.version.sdk >> "$OUT/android_version.txt"
 

@@ -173,5 +173,15 @@ class AppUiTest {
         rule.onNodeWithTag("save_provider").performClick()
         rule.waitUntil(10_000) { rule.onAllNodes(hasTestTag("screen_provider_detail")).fetchSemanticsNodes().isNotEmpty() }
         rule.onNodeWithText("UI Test Provider").assertIsDisplayed()
+
+        // Survives a configuration change (rotation) with the back stack restored.
+        rule.activityRule.scenario.recreate()
+        rule.waitUntil(10_000) { rule.onAllNodes(hasTestTag("screen_provider_detail")).fetchSemanticsNodes().isNotEmpty() }
+        rule.onNodeWithText("UI Test Provider").assertIsDisplayed()
+
+        // Leave on a settled top-level screen.
+        rule.activityRule.scenario.onActivity { it.onBackPressedDispatcher.onBackPressed() }
+        rule.waitUntil(10_000) { rule.onAllNodes(hasTestTag("screen_providers")).fetchSemanticsNodes().isNotEmpty() }
+        rule.waitForIdle()
     }
 }

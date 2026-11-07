@@ -72,6 +72,8 @@ jobs:
           arch: x86_64
           target: ${{ matrix.api == 29 && 'default' || 'google_apis' }}
           emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          ram-size: 4096M
+          heap-size: 576M
           disable-animations: true
           script: bash ci/device-test.sh ${{ matrix.api }}
       - uses: actions/upload-artifact@v4
