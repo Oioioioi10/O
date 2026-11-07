@@ -10,13 +10,11 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.heightIn
 import androidx.compose.foundation.layout.navigationBarsPadding
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.grid.GridCells
-import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
-import androidx.compose.foundation.lazy.grid.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
@@ -152,27 +150,31 @@ fun ProvidersScreen(onOpenProvider: (Long) -> Unit) {
                 Spacer(Modifier.height(4.dp))
                 Text("All adapters were built from each provider's API documentation.", style = MaterialTheme.typography.bodyMedium, color = MaterialTheme.colorScheme.onSurfaceVariant)
                 Spacer(Modifier.height(16.dp))
-                LazyVerticalGrid(
-                    columns = GridCells.Adaptive(150.dp),
-                    horizontalArrangement = Arrangement.spacedBy(10.dp),
+                // Plain (non-lazy) grid: only 8 entries, and every tile stays reachable on short screens.
+                Column(
+                    Modifier.heightIn(max = 460.dp).verticalScroll(rememberScrollState()).testTag("provider_picker"),
                     verticalArrangement = Arrangement.spacedBy(10.dp),
-                    modifier = Modifier.height(420.dp),
                 ) {
-                    items(ProviderType.entries) { type ->
-                        Surface(
-                            onClick = {
-                                pickedType = type.id
-                                showPicker = false
-                            },
-                            shape = MaterialTheme.shapes.large,
-                            color = MaterialTheme.colorScheme.surfaceContainerHigh,
-                            modifier = Modifier.testTag("pick_${type.id}"),
-                        ) {
-                            Row(Modifier.padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
-                                ProviderAvatar(type, 36.dp)
-                                Spacer(Modifier.width(10.dp))
-                                Text(type.displayName, style = MaterialTheme.typography.titleSmall, maxLines = 2)
+                    ProviderType.entries.chunked(2).forEach { row ->
+                        Row(horizontalArrangement = Arrangement.spacedBy(10.dp)) {
+                            row.forEach { type ->
+                                Surface(
+                                    onClick = {
+                                        pickedType = type.id
+                                        showPicker = false
+                                    },
+                                    shape = MaterialTheme.shapes.large,
+                                    color = MaterialTheme.colorScheme.surfaceContainerHigh,
+                                    modifier = Modifier.weight(1f).testTag("pick_${type.id}"),
+                                ) {
+                                    Row(Modifier.padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
+                                        ProviderAvatar(type, 36.dp)
+                                        Spacer(Modifier.width(10.dp))
+                                        Text(type.displayName, style = MaterialTheme.typography.titleSmall, maxLines = 2)
+                                    }
+                                }
                             }
+                            if (row.size == 1) Spacer(Modifier.weight(1f))
                         }
                     }
                 }

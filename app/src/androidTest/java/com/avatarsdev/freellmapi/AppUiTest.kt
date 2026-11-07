@@ -14,6 +14,7 @@ import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.onRoot
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performTextInput
 import androidx.compose.ui.test.performTextReplacement
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -165,7 +166,7 @@ class AppUiTest {
         rule.onNodeWithTag("add_provider").performClick()
         rule.waitForIdle()
         shot("13_add_provider_sheet", rule)
-        rule.onNodeWithTag("pick_custom").performClick()
+        rule.onNodeWithTag("pick_custom").performScrollTo().performClick()
         rule.waitForIdle()
         rule.onNodeWithText("Display name").performTextReplacement("UI Test Provider")
         shot("14_add_provider_dialog", rule)

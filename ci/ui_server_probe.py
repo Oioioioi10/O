@@ -7,8 +7,8 @@ out, pkg, api = sys.argv[1], sys.argv[2], sys.argv[3]
 report = {}
 
 def adb(*args, check=False):
-    r = subprocess.run(["adb", *args], capture_output=True, text=True)
-    return r.stdout
+    r = subprocess.run(["adb", *args], capture_output=True)
+    return r.stdout.decode("utf-8", "replace")
 
 def dump():
     for _ in range(6):
@@ -48,7 +48,6 @@ report["tapped_start"] = tap("Start server")
 time.sleep(2)
 report["tapped_allow"] = tap("Allow", "ALLOW")
 time.sleep(3)
-adb("exec-out", "screencap", "-p")
 subprocess.run(f"adb exec-out screencap -p > {out}/screens/01_server_running_api{api}.png", shell=True)
 services = adb("shell", "dumpsys", "activity", "services", pkg)
 open(f"{out}/services.txt", "w").write(services)
