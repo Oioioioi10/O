@@ -1,0 +1,5 @@
+-dontwarn org.conscrypt.**
+-dontwarn org.bouncycastle.**
+-dontwarn org.openjsse.**
+-keep class com.avatarsdev.tiktokupgrade.data.db.** { *; }
+-keepclassmembers class com.avatarsdev.tiktokupgrade.domain.feed.** { *; }
