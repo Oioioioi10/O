@@ -97,7 +97,7 @@ fun HistoryScreen(vm: LikesViewModel, settingsVm: SettingsViewModel, onNavigate:
                 onValueChange = vm::setQuery,
                 modifier = Modifier.fillMaxWidth().testTag("searchField"),
                 singleLine = true,
-                placeholder = { Text("ค้นหา Video ID, ลิงก์ หรือเวลา (เช่น 21:)") },
+                placeholder = { Text("ค้นหา ID, ลิงก์ หรือเวลา", maxLines = 1) },
                 leadingIcon = { Icon(Icons.Filled.Search, null) },
                 trailingIcon = {
                     if (state.query.isNotEmpty()) IconButton(onClick = { vm.setQuery("") }) { Icon(Icons.Filled.Clear, "ล้าง") }

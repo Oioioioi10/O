@@ -215,7 +215,7 @@ fun BarChart(
             }
         }
         Spacer(Modifier.height(6.dp))
-        val every = if (labelEvery > 0) labelEvery else ((labels.size + 5) / 6).coerceAtLeast(1)
+        val every = if (labelEvery > 0) labelEvery else ((labels.size + 3) / 4).coerceAtLeast(1)
         Row(Modifier.fillMaxWidth()) {
             labels.forEachIndexed { i, l ->
                 Text(

@@ -10,6 +10,7 @@ import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
+import androidx.compose.ui.test.performScrollTo
 import androidx.compose.ui.test.performScrollToNode
 import androidx.compose.ui.test.performTextClearance
 import androidx.compose.ui.test.performTextInput
@@ -83,17 +84,18 @@ class AppFlowTest {
     @Test
     fun a_sampleData_dashboard_analytics_history() {
         resetAll()
-        waitForTag("trySample")
+        waitForTag("dashboardList")
         shot("01_dashboard_empty")
 
-        rule.onNodeWithTag("trySample").performClick()
+        // On short screens the empty-state button is below the fold: scroll it into view first.
+        scrollTo("dashboardList", "trySample").performClick()
         waitForTag("dashTotal", 15_000)
         rule.onNodeWithTag("sampleBanner").assertExists()
         shot("02_dashboard_sample")
 
         rule.onNodeWithTag("nav_analytics").performClick()
         waitForTag("totalLikes")
-        rule.onNodeWithText("30 วัน").performClick()
+        rule.onNodeWithText("30 วัน").performScrollTo().performClick()
         rule.waitForIdle()
         shot("04_analytics")
         scrollTo("analyticsList", "hourlyChart").assertExists()

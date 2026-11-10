@@ -65,9 +65,9 @@ object Routes {
 private data class Tab(val route: String, val label: String, val icon: ImageVector, val selectedIcon: ImageVector)
 
 private val tabs = listOf(
-    Tab(Routes.HOME, "หน้าหลัก", Icons.Outlined.Home, Icons.Filled.Home),
+    Tab(Routes.HOME, "หน้าแรก", Icons.Outlined.Home, Icons.Filled.Home),
     Tab(Routes.FEED, "AI Feed", Icons.Outlined.AutoAwesome, Icons.Filled.AutoAwesome),
-    Tab(Routes.ANALYTICS, "วิเคราะห์", Icons.Outlined.Insights, Icons.Filled.Insights),
+    Tab(Routes.ANALYTICS, "สถิติ", Icons.Outlined.Insights, Icons.Filled.Insights),
     Tab(Routes.HISTORY, "ประวัติ", Icons.Outlined.History, Icons.Filled.History),
     Tab(Routes.SETTINGS, "ตั้งค่า", Icons.Outlined.Settings, Icons.Filled.Settings),
 )
@@ -119,7 +119,7 @@ fun AppRoot(pendingRoute: MutableStateFlow<String?>) {
                             selected = selected,
                             onClick = { nav.goTab(tab.route) },
                             icon = { Icon(if (selected) tab.selectedIcon else tab.icon, contentDescription = tab.label) },
-                            label = { Text(tab.label, maxLines = 1, overflow = TextOverflow.Ellipsis) },
+                            label = { Text(tab.label, maxLines = 1, softWrap = false, overflow = TextOverflow.Clip, style = MaterialTheme.typography.labelSmall) },
                             colors = NavigationBarItemDefaults.colors(
                                 selectedIconColor = MaterialTheme.colorScheme.primary,
                                 selectedTextColor = MaterialTheme.colorScheme.primary,

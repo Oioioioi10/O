@@ -177,7 +177,7 @@ fun AnalyticsScreen(vm: LikesViewModel, settingsVm: SettingsViewModel, onNavigat
             Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                 StatTileText("วันที่กดมากสุด", state.summary.peakDay?.let { Fmt.shortDate(it.date) } ?: "—", Modifier.weight(1f), accent = Brand.Amber,
                     sub = state.summary.peakDay?.let { "${it.count} ไลก์" })
-                StatTileText("ชั่วโมงที่กดบ่อย", state.summary.peakHour?.let { Fmt.hourLabel(it) } ?: "—", Modifier.weight(1f), accent = Brand.Green,
+                StatTileText("ชม.ที่กดบ่อย", state.summary.peakHour?.let { Fmt.hourLabel(it) } ?: "—", Modifier.weight(1f), accent = Brand.Green,
                     sub = state.summary.peakHour?.let { "${state.hourly[it]} ไลก์" })
             }
         }

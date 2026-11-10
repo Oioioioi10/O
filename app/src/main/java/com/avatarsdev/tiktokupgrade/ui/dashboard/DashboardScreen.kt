@@ -90,7 +90,7 @@ fun DashboardScreen(
             item {
                 Row(horizontalArrangement = Arrangement.spacedBy(12.dp)) {
                     StatTile("วันนี้", ov.today, Modifier.weight(1f), accent = Brand.Amber)
-                    StatTileText("ช่วงที่กดบ่อย", ov.peakHour?.let { Fmt.hourLabel(it) } ?: "—", Modifier.weight(1f), accent = Brand.Green,
+                    StatTileText("ชม.ที่กดบ่อย", ov.peakHour?.let { Fmt.hourLabel(it) } ?: "—", Modifier.weight(1f), accent = Brand.Green,
                         sub = ov.lastLikeAt?.let { "ล่าสุด " + Fmt.dateTime(it).substringBefore(" ·") })
                 }
             }
