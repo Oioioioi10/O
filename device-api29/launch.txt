@@ -1,0 +1,7 @@
+Starting: Intent { cmp=com.avatarsdev.tiktokupgrade/.ui.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: com.avatarsdev.tiktokupgrade/.ui.MainActivity
+TotalTime: 3094
+WaitTime: 3110
+Complete

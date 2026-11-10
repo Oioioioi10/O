@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.avatarsdev.tiktokupgrade.LikeAnalyticsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2026-11-10T08:10:20" hostname="runnervmwuk1x" time="0.077">
+  <properties/>
+  <testcase name="sampleData_isTaggedAndFake" classname="com.avatarsdev.tiktokupgrade.LikeAnalyticsTest" time="0.065"/>
+  <testcase name="search_byIdAndTime" classname="com.avatarsdev.tiktokupgrade.LikeAnalyticsTest" time="0.005"/>
+  <testcase name="csv_escapesAndHasHeader" classname="com.avatarsdev.tiktokupgrade.LikeAnalyticsTest" time="0.003"/>
+  <testcase name="dailyAndHourly" classname="com.avatarsdev.tiktokupgrade.LikeAnalyticsTest" time="0.003"/>
+  <testcase name="filter_5to6Nov_inLocalTime_newestFirst" classname="com.avatarsdev.tiktokupgrade.LikeAnalyticsTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

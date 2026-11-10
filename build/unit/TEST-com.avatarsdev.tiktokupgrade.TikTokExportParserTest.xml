@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.avatarsdev.tiktokupgrade.TikTokExportParserTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2026-11-10T08:10:21" hostname="runnervmwuk1x" time="0.027">
+  <properties/>
+  <testcase name="zip_txtLikeListFile" classname="com.avatarsdev.tiktokupgrade.TikTokExportParserTest" time="0.009"/>
+  <testcase name="classicLayout_readsOnlyLikes_dedupes_andKeepsUtc" classname="com.avatarsdev.tiktokupgrade.TikTokExportParserTest" time="0.001"/>
+  <testcase name="deviceZone_shiftsZonelessTimestamps" classname="com.avatarsdev.tiktokupgrade.TikTokExportParserTest" time="0.0"/>
+  <testcase name="bomAndBareArray_areAccepted" classname="com.avatarsdev.tiktokupgrade.TikTokExportParserTest" time="0.0"/>
+  <testcase name="zip_findsJsonInside" classname="com.avatarsdev.tiktokupgrade.TikTokExportParserTest" time="0.001"/>
+  <testcase name="txtExport_pairsDateAndLink" classname="com.avatarsdev.tiktokupgrade.TikTokExportParserTest" time="0.001"/>
+  <testcase name="dateFormats" classname="com.avatarsdev.tiktokupgrade.TikTokExportParserTest" time="0.002"/>
+  <testcase name="newerLayout_lowercaseKeys_ignoresFavouritesAndWatchHistory" classname="com.avatarsdev.tiktokupgrade.TikTokExportParserTest" time="0.009"/>
+  <testcase name="invalidAndUnrelatedFiles_giveWarnings" classname="com.avatarsdev.tiktokupgrade.TikTokExportParserTest" time="0.002"/>
+  <testcase name="videoIdExtraction" classname="com.avatarsdev.tiktokupgrade.TikTokExportParserTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

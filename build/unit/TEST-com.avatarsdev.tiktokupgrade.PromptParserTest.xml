@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.avatarsdev.tiktokupgrade.PromptParserTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2026-11-10T08:10:21" hostname="runnervmwuk1x" time="0.028">
+  <properties/>
+  <testcase name="rulesRoundTripJson" classname="com.avatarsdev.tiktokupgrade.PromptParserTest" time="0.011"/>
+  <testcase name="asciiAliasesNeedWordBoundaries" classname="com.avatarsdev.tiktokupgrade.PromptParserTest" time="0.0"/>
+  <testcase name="gibberish_givesWarning" classname="com.avatarsdev.tiktokupgrade.PromptParserTest" time="0.001"/>
+  <testcase name="weightsNotSummingTo100_areNormalised" classname="com.avatarsdev.tiktokupgrade.PromptParserTest" time="0.001"/>
+  <testcase name="excludeWinsOverInclude" classname="com.avatarsdev.tiktokupgrade.PromptParserTest" time="0.002"/>
+  <testcase name="specExample_isParsedExactly" classname="com.avatarsdev.tiktokupgrade.PromptParserTest" time="0.003"/>
+  <testcase name="percentsWithoutSeparators" classname="com.avatarsdev.tiktokupgrade.PromptParserTest" time="0.001"/>
+  <testcase name="unknownTopic_becomesCustomCategory" classname="com.avatarsdev.tiktokupgrade.PromptParserTest" time="0.004"/>
+  <testcase name="unspecifiedWeights_shareRemainder" classname="com.avatarsdev.tiktokupgrade.PromptParserTest" time="0.001"/>
+  <testcase name="weightNormalizer_largestRemainder" classname="com.avatarsdev.tiktokupgrade.PromptParserTest" time="0.0"/>
+  <testcase name="oneLine_commaAndEnglishNegation" classname="com.avatarsdev.tiktokupgrade.PromptParserTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

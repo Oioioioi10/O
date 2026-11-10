@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.avatarsdev.tiktokupgrade.LlmPromptClientTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-10T08:10:20" hostname="runnervmwuk1x" time="0.559">
+  <properties/>
+  <testcase name="httpError_throwsLlmException" classname="com.avatarsdev.tiktokupgrade.LlmPromptClientTest" time="0.53"/>
+  <testcase name="parsesModelJson_mapsKnownCategories_normalises" classname="com.avatarsdev.tiktokupgrade.LlmPromptClientTest" time="0.027"/>
+  <testcase name="nonJsonAnswer_throws" classname="com.avatarsdev.tiktokupgrade.LlmPromptClientTest" time="0.001"/>
+  <testcase name="endpointBuilding" classname="com.avatarsdev.tiktokupgrade.LlmPromptClientTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

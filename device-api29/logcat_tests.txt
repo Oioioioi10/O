@@ -1,0 +1,739 @@
+--------- beginning of main
+11-10 08:11:58.770  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:11:58.772  1567  1567 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-10 08:11:58.773  3493  3493 W Gralloc3: mapper 3.x is not supported
+11-10 08:11:58.776  3493  3493 D HostConnection: createUnique: call
+11-10 08:11:58.776  3493  3493 D HostConnection: HostConnection::get() New Host Connection established 0x7f1568fab5a0, tid 3493
+11-10 08:11:58.777  3493  3493 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 08:11:58.778  3493  3493 D eglCodecCommon: allocate: Ask for block of size 0x1000
+11-10 08:11:58.778  3493  3493 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3fff28000 size 0x2000
+11-10 08:11:58.780  3493  3493 D eglCodecCommon: allocate: Ask for block of size 0xc9000
+11-10 08:11:58.780  3493  3493 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ffe60000 size 0xca000
+11-10 08:11:58.923  3027  3027 I abb     : StartCommandInProcess(73657474696e67730067657400676c6f settings.get.glo [truncated])
+11-10 08:11:58.932  3027  3027 I abb     : StartCommandInProcess(7061636b61676500696e7374616c6c00 package.install. [truncated])
+11-10 08:11:58.920  1904  1904 W Binder:1904_8: type=1400 audit(0.0:23): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+11-10 08:11:58.920  1904  1904 I chatty  : uid=1000 system_server identical 1 line
+11-10 08:11:58.920  1904  1904 W Binder:1904_8: type=1400 audit(0.0:25): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+11-10 08:11:58.920  1746  1746 W adbd    : type=1400 audit(0.0:26): avc: denied { shutdown } for scontext=u:r:adbd:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+11-10 08:11:58.950  1904  1904 W Binder:1904_8: type=1400 audit(0.0:27): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+--------- beginning of system
+11-10 08:11:58.973  1904  1943 W PackageParser: Unknown element under <manifest>: queries at /data/app/vmdl1536165374.tmp/base.apk Binary XML file line #16
+11-10 08:11:58.973  1904  1943 W PackageParser: No actions in intent filter at /data/app/vmdl1536165374.tmp/base.apk Binary XML file line #33
+11-10 08:11:58.973  1904  1943 W PackageParser: No actions in intent filter at /data/app/vmdl1536165374.tmp/base.apk Binary XML file line #41
+11-10 08:11:58.973  1904  1943 W PackageParser: No actions in intent filter at /data/app/vmdl1536165374.tmp/base.apk Binary XML file line #49
+11-10 08:11:58.975  1904  1943 I PackageManager: Un-granting permission android.permission.GLOBAL_SEARCH from package com.android.quicksearchbox (protectionLevel=18 flags=0x3088be45)
+11-10 08:11:58.975  1904  1943 I PackageManager: Un-granting permission android.permission.BIND_WALLPAPER from package com.android.camera2 (protectionLevel=18 flags=0x20d8bc45)
+11-10 08:11:58.979  1904  1943 I PackageManager: Un-granting permission android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS from package com.android.captiveportallogin (protectionLevel=18 flags=0x38c8be45)
+11-10 08:11:58.979  1904  1943 I PackageManager: Un-granting permission android.permission.NETWORK_BYPASS_PRIVATE_DNS from package com.android.captiveportallogin (protectionLevel=2 flags=0x38c8be45)
+11-10 08:11:58.997  1904  1943 D PackageManager: Instant App installer not found with android.intent.action.INSTALL_INSTANT_APP_PACKAGE
+11-10 08:11:58.997  1904  1943 D PackageManager: Clear ephemeral installer activity
+11-10 08:11:59.000  1904  1943 V BackupManagerService: restoreAtInstall pkg=com.avatarsdev.tiktokupgrade.test token=2 restoreSet=0
+11-10 08:11:59.000  1904  1943 V BackupManagerService: Finishing install immediately
+11-10 08:11:59.001  1664  1664 I netd    : trafficSetNetPermForUids(0, [10117]) <0.03ms>
+11-10 08:11:59.001  1763  1775 E         : Couldn't opendir /data/app/vmdl1536165374.tmp: No such file or directory
+11-10 08:11:59.001  1763  1775 E installd: Failed to delete /data/app/vmdl1536165374.tmp: No such file or directory
+11-10 08:11:59.000  1904  1904 W Binder:1904_8: type=1400 audit(0.0:28): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+11-10 08:11:59.000  1904  1904 I chatty  : uid=1000 system_server identical 1 line
+11-10 08:11:59.000  1904  1904 W Binder:1904_8: type=1400 audit(0.0:30): avc: denied { getopt } for scontext=u:r:system_server:s0 tcontext=u:r:shell:s0 tclass=unix_stream_socket permissive=0
+11-10 08:11:59.008  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:11:59.008  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:11:59.014  1904  1904 I RoleManagerService: Granting default permissions...
+11-10 08:11:59.015  1904  1930 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.avatarsdev.tiktokupgrade.test flg=0x4000010 (has extras) } to com.android.packageinstaller/.PackageInstalledReceiver
+11-10 08:11:59.015  1904  1930 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.avatarsdev.tiktokupgrade.test flg=0x4000010 (has extras) } to com.android.gallery3d/.app.PackagesMonitor
+11-10 08:11:59.016  1904  1930 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.PACKAGE_ADDED dat=package:com.avatarsdev.tiktokupgrade.test flg=0x4000010 (has extras) } to com.android.musicfx/.Compatibility$Receiver
+11-10 08:11:59.021  1904  1988 I InputReader: Reconfiguring input devices.  changes=0x00000010
+11-10 08:11:59.046  1904  1904 I Telecom : DefaultDialerCache: Refreshing default dialer for user 0: now com.android.dialer: CM.CCCR->CM.UECNT->CM.CCCR->CM.UECNT@AEI
+11-10 08:11:59.046  1904  1904 V BackupManagerConstants: getFullBackupIntervalMilliseconds(...) returns 86400000
+11-10 08:11:59.047  1904  1904 V BackupManagerConstants: getFullBackupRequiredNetworkType(...) returns 2
+11-10 08:11:59.047  1904  1904 V BackupManagerConstants: getFullBackupRequireCharging(...) returns true
+11-10 08:11:59.056  2288  2288 D CarrierSvcBindHelper: No carrier app for: 0
+11-10 08:11:59.066  2288  2288 D CarrierConfigLoader: mHandler: 9 phoneId: 0
+11-10 08:11:59.071  1904  1929 W VoiceInteractionManagerService: no available voice recognition services found for user 0
+11-10 08:11:59.081  1904  3463 I ActivityManager: Force stopping com.avatarsdev.tiktokupgrade appid=10116 user=0: from pid 3508
+11-10 08:11:59.082  1904  3463 I ActivityManager: Killing 3189:com.avatarsdev.tiktokupgrade/u0a116 (adj 0): stop com.avatarsdev.tiktokupgrade
+11-10 08:11:59.086  1904  3463 W ActivityTaskManager: Force removing ActivityRecord{7bb8ae8 u0 com.avatarsdev.tiktokupgrade/.ui.MainActivity t6 f}: app died, no saved state
+11-10 08:11:59.091  1904  3463 W InputReader: Device has associated, but no associated display id.
+11-10 08:11:59.114  1904  1924 W ActivityManager: setHasOverlayUi called on unknown pid: 3189
+11-10 08:11:59.094  1904  3463 I chatty  : uid=1000(system) Binder:1904_11 identical 18 lines
+11-10 08:11:59.094  1904  3463 W InputReader: Device has associated, but no associated display id.
+11-10 08:11:59.115  2288  2288 D CarrierSvcBindHelper: No carrier app for: 0
+11-10 08:11:59.121  1665  1665 I Zygote  : Process 3189 exited due to signal 9 (Killed)
+11-10 08:11:59.122  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:11:59.127  1697  1740 I chatty  : uid=1000(system) HwBinder:1697_2 identical 1 line
+11-10 08:11:59.127  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:11:59.128  2575  2777 D EGL_emulation: eglMakeCurrent: 0x7e40e63c8d00: ver 3 0 (tinfo 0x7e40e631e6c0)
+11-10 08:11:59.166  1904  1932 I libprocessgroup: Successfully killed process cgroup uid 10116 pid 3189 in 80ms
+11-10 08:11:59.223  3514  3514 D AndroidRuntime: >>>>>> START com.android.internal.os.RuntimeInit uid 2000 <<<<<<
+11-10 08:11:59.224  3514  3514 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_apex_image"
+11-10 08:11:59.224  3514  3514 I AndroidRuntime: Using default boot image
+11-10 08:11:59.224  3514  3514 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.disable_lock_profiling"
+11-10 08:11:59.224  3514  3514 I AndroidRuntime: Leaving lock profiling enabled
+11-10 08:11:59.224  3514  3514 E libc    : Access denied finding property "persist.device_config.runtime_native_boot.enable_generational_cc"
+11-10 08:11:59.225  3514  3514 I app_process: Core platform API reporting enabled, enforcing=false
+11-10 08:11:59.249  3514  3514 D ICU     : Time zone APEX file found: /apex/com.android.tzdata/etc/icu/icu_tzdata.dat
+11-10 08:11:59.251  3514  3514 W app_process: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 08:11:59.254  3514  3514 I app_process: The ClassLoaderContext is a special shared library.
+11-10 08:11:59.259  3514  3514 W app_process: JNI RegisterNativeMethods: attempt to register 0 native methods for android.media.AudioAttributes
+11-10 08:11:59.261  3514  3514 D AndroidRuntime: Calling main entry com.android.commands.am.Am
+11-10 08:11:59.263  1904  2497 I ActivityManager: Force stopping com.avatarsdev.tiktokupgrade appid=10116 user=0: start instr
+11-10 08:11:59.270  1665  1665 D Zygote  : Forked child process 3527
+11-10 08:11:59.272  3527  3527 I v.tiktokupgrad: Late-enabling -Xcheck:jni
+11-10 08:11:59.275  1904  1931 I ActivityManager: Start proc 3527:com.avatarsdev.tiktokupgrade/u0a116 for added application com.avatarsdev.tiktokupgrade
+11-10 08:11:59.277  3527  3527 E v.tiktokupgrad: Unknown bits set in runtime_flags: 0x8000
+11-10 08:11:59.277  3527  3527 W v.tiktokupgrad: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 08:11:59.293  3527  3527 W ActivityThread: Package uses different ABI(s) than its instrumentation: package[com.avatarsdev.tiktokupgrade]: x86_64, null instrumentation[com.avatarsdev.tiktokupgrade.test]: null, null
+11-10 08:11:59.295  3527  3527 I v.tiktokupgrad: The ClassLoaderContext is a special shared library.
+11-10 08:11:59.465  1904  1929 I RoleUserState: Wrote roles.xml successfully
+11-10 08:11:59.567  1904  1923 I DropBoxManagerService: add tag=system_app_strictmode isTagEnabled=true flags=0x2
+11-10 08:11:59.852  3527  3527 I chatty  : uid=10116(com.avatarsdev.tiktokupgrade) identical 2 lines
+11-10 08:11:59.853  3527  3527 I v.tiktokupgrad: The ClassLoaderContext is a special shared library.
+11-10 08:12:00.003  2042  2042 D KeyguardClockSwitch: Updating clock: 812
+11-10 08:12:00.403  3527  3527 W v.tiktokupgrad: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Landroid/app/Activity;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+11-10 08:12:00.403  3527  3527 W v.tiktokupgrad: Accessing hidden method Landroid/app/Instrumentation;->execStartActivity(Landroid/content/Context;Landroid/os/IBinder;Landroid/os/IBinder;Ljava/lang/String;Landroid/content/Intent;ILandroid/os/Bundle;)Landroid/app/Instrumentation$ActivityResult; (greylist, linking, allowed)
+11-10 08:12:00.407  3527  3527 I AndroidJUnitRunner: newApplication com.avatarsdev.tiktokupgrade.TikTokUpgradeApp
+11-10 08:12:00.435  3527  3527 I AndroidJUnitRunner: onCreate Bundle[EMPTY_PARCEL]
+11-10 08:12:00.437  3527  3527 D AndroidJUnitRunner: Use the raw file system for managing file I/O.
+11-10 08:12:00.446  3527  3527 V TestEventClient: No service name argument was given (testDiscoveryService, testRunEventService or orchestratorService)
+11-10 08:12:00.447  3527  3547 D AndroidJUnitRunner: onStart is called.
+11-10 08:12:00.611  3527  3527 D NetworkSecurityConfig: No Network Security Config specified, using platform default
+11-10 08:12:00.634  3527  3547 D TestRequestBuilder: Using class path scanning to discover tests
+11-10 08:12:00.634  3527  3547 I TestRequestBuilder: Scanning classpath to find tests in paths [/data/app/com.avatarsdev.tiktokupgrade.test-lP2Ub5EgC5NngJXE_o_INw==/base.apk]
+11-10 08:12:00.634  3527  3547 W v.tiktokupgrad: Opening an oat file without a class loader. Are you using the deprecated DexFile APIs?
+11-10 08:12:00.723  3527  3547 I TestRunner: run started: 3 tests
+11-10 08:12:00.725  3527  3547 I TestRunner: started: a_sampleData_dashboard_analytics_history(com.avatarsdev.tiktokupgrade.AppFlowTest)
+11-10 08:12:00.818  3527  3547 W FileTestStorage: Output properties is not supported.
+11-10 08:12:00.819  3527  3547 W v.tiktokupgrad: Accessing hidden method Landroid/os/Trace;->setAppTracingAllowed(Z)V (greylist, reflection, allowed)
+11-10 08:12:00.820  3527  3547 I Tracing : Tracer added: class androidx.test.platform.tracing.AndroidXTracer
+11-10 08:12:00.831  3527  3527 D EventInjectionStrategy: Creating injection strategy with input manager.
+11-10 08:12:00.831  3527  3527 W v.tiktokupgrad: Accessing hidden method Landroid/hardware/input/InputManager;->getInstance()Landroid/hardware/input/InputManager; (greylist, reflection, allowed)
+11-10 08:12:00.831  3527  3527 W v.tiktokupgrad: Accessing hidden method Landroid/hardware/input/InputManager;->injectInputEvent(Landroid/view/InputEvent;I)Z (greylist, reflection, allowed)
+11-10 08:12:00.831  3527  3527 W v.tiktokupgrad: Accessing hidden field Landroid/hardware/input/InputManager;->INJECT_INPUT_EVENT_MODE_WAIT_FOR_FINISH:I (greylist, reflection, allowed)
+11-10 08:12:00.838  3527  3527 W v.tiktokupgrad: Accessing hidden method Landroid/os/MessageQueue;->next()Landroid/os/Message; (greylist, reflection, allowed)
+11-10 08:12:00.838  3527  3527 W v.tiktokupgrad: Accessing hidden field Landroid/os/MessageQueue;->mMessages:Landroid/os/Message; (greylist, reflection, allowed)
+11-10 08:12:00.838  3527  3527 W v.tiktokupgrad: Accessing hidden method Landroid/os/Message;->recycleUnchecked()V (greylist, reflection, allowed)
+11-10 08:12:00.839  3527  3547 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@6baed69]
+11-10 08:12:00.867  3527  3547 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-10 08:12:00.871  1664  1664 I netd    : trafficSwapActiveStatsMap() <49.85ms>
+11-10 08:12:00.872  1664  1664 I netd    : tetherGetStats() <0.36ms>
+11-10 08:11:59.575  1904  1923 I chatty  : uid=1000(system) android.io identical 3 lines
+11-10 08:11:59.576  1904  1923 I DropBoxManagerService: add tag=system_app_strictmode isTagEnabled=true flags=0x2
+11-10 08:12:00.872  1904  2497 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.avatarsdev.tiktokupgrade/.ui.MainActivity} from uid 10116
+11-10 08:12:00.875  1904  1925 E system_server: Invalid ID 0x00000000.
+11-10 08:12:00.877  1904  2497 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:00.878  1904  2497 I chatty  : uid=1000(system) Binder:1904_7 identical 38 lines
+11-10 08:12:00.878  1904  2497 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:00.881  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:00.881  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:00.882  3527  3527 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@d03b0fa
+11-10 08:12:00.890  1664  1664 I netd    : bandwidthSetGlobalAlert(2097152) <0.09ms>
+11-10 08:12:00.891  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:00.894  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:00.894  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:00.896  1710  1941 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-10 08:12:00.897  1710  1941 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-10 08:12:00.897  3527  3553 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+11-10 08:12:00.903  3527  3553 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+11-10 08:12:00.904  1904  1925 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:00.904  1904  1925 I chatty  : uid=1000(system) android.anim identical 8 lines
+11-10 08:12:00.904  1904  1925 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:00.890  3527  3527 W RenderThread: type=1400 audit(0.0:35): avc: denied { write } for name="property_service" dev="tmpfs" ino=7860 scontext=u:r:untrusted_app:s0:c116,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.avatarsdev.tiktokupgrade
+11-10 08:12:00.922  3527  3553 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+11-10 08:12:00.927  3527  3553 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-10 08:12:00.927  3527  3553 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-10 08:12:00.928  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@a0d5023 in: PRE_ON_CREATE
+11-10 08:12:00.928  3527  3527 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+11-10 08:12:00.935  2575  2777 D EGL_emulation: eglMakeCurrent: 0x7e40e63c8d00: ver 3 0 (tinfo 0x7e40e631e6c0)
+11-10 08:12:00.981  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@a0d5023 in: CREATED
+11-10 08:12:00.981  3527  3527 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.avatarsdev.tiktokupgrade.ui.MainActivity@a0d5023
+11-10 08:12:00.982  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@a0d5023 in: STARTED
+11-10 08:12:00.982  3527  3527 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.avatarsdev.tiktokupgrade.ui.MainActivity@a0d5023
+11-10 08:12:00.984  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@a0d5023 in: RESUMED
+11-10 08:12:00.985  3527  3527 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.avatarsdev.tiktokupgrade.ui.MainActivity@a0d5023
+11-10 08:12:01.481  3527  3527 W v.tiktokupgrad: Accessing hidden method Landroid/view/View;->getViewRootImpl()Landroid/view/ViewRootImpl; (greylist, reflection, allowed)
+11-10 08:12:01.481  3527  3527 W v.tiktokupgrad: Accessing hidden field Landroid/view/View$AttachInfo;->mVisibleInsets:Landroid/graphics/Rect; (greylist, reflection, allowed)
+11-10 08:12:01.481  3527  3527 W v.tiktokupgrad: Accessing hidden field Landroid/view/ViewRootImpl;->mAttachInfo:Landroid/view/View$AttachInfo; (greylist, reflection, allowed)
+11-10 08:12:01.690  3527  3527 W v.tiktokupgrad: Class androidx.compose.runtime.snapshots.SnapshotStateList failed lock verification and will run slower.
+11-10 08:12:01.690  3527  3527 W v.tiktokupgrad: Common causes for lock verification issues are non-optimized dex code
+11-10 08:12:01.690  3527  3527 W v.tiktokupgrad: and incorrect proguard optimizations.
+11-10 08:12:01.854  3527  3551 D HostConnection: HostConnection::get() New Host Connection established 0x7e4131a548c0, tid 3551
+11-10 08:12:01.855  3527  3551 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 08:12:01.857  3527  3551 D EGL_emulation: eglCreateContext: 0x7e4131a54dc0: maj 3 min 0 rcv 3
+11-10 08:12:01.858  3527  3551 D EGL_emulation: eglMakeCurrent: 0x7e4131a54dc0: ver 3 0 (tinfo 0x7e4131a185e0)
+11-10 08:12:01.863  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:01.864  1567  1567 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-10 08:12:01.864  3527  3551 W Gralloc3: mapper 3.x is not supported
+11-10 08:12:01.865  3527  3551 D HostConnection: createUnique: call
+11-10 08:12:01.866  3527  3551 D HostConnection: HostConnection::get() New Host Connection established 0x7e4131a54f00, tid 3551
+11-10 08:12:01.868  3527  3551 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 08:12:01.871  3527  3551 D eglCodecCommon: allocate: Ask for block of size 0x1000
+11-10 08:12:01.871  3527  3551 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3ffff8000 size 0x2000
+11-10 08:12:01.872  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:01.873  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:01.908  3527  3551 D EGL_emulation: eglMakeCurrent: 0x7e4131a54dc0: ver 3 0 (tinfo 0x7e4131a185e0)
+11-10 08:12:02.217  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:02.217  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:02.219  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:02.219  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:02.295  3527  3551 I OpenGLRenderer: Davey! duration=1294ms; Flags=1, IntendedVsync=32128920103, Vsync=32128920103, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=32129878370, AnimationStart=32130108790, PerformTraversalsStart=32130167660, DrawStart=33017632840, SyncQueued=33037096360, SyncStart=33037576900, IssueDrawCommandsStart=33037660430, SwapBuffers=33386714180, FrameCompleted=33423869240, DequeueBufferDuration=35000, QueueBufferDuration=1122000, 
+11-10 08:12:02.296  3527  3527 I Choreographer: Skipped 76 frames!  The application may be doing too much work on its main thread.
+11-10 08:12:02.309  1904  1929 I ActivityTaskManager: Displayed com.avatarsdev.tiktokupgrade/.ui.MainActivity: +1s425ms
+11-10 08:12:02.313  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:02.313  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:02.744  1904  1920 D AlarmManagerService: Kernel timezone updated to 0 minutes west of GMT
+11-10 08:12:03.346  1904  1904 V SettingsProvider: Notifying for 0: content://settings/secure/accessibility_enabled
+11-10 08:12:03.354  1710  1781 D PermissionCache: checking android.permission.READ_FRAME_BUFFER for uid=2000 => granted (416 us)
+11-10 08:12:03.354  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:03.356  1567  1567 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-10 08:12:03.356  3514  3526 W Gralloc3: mapper 3.x is not supported
+11-10 08:12:03.359  3514  3526 D HostConnection: createUnique: call
+11-10 08:12:03.360  3514  3526 D HostConnection: HostConnection::get() New Host Connection established 0x75b1108ae1c0, tid 3526
+11-10 08:12:03.360  3514  3526 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 08:12:03.361  3514  3526 D eglCodecCommon: allocate: Ask for block of size 0x1000
+11-10 08:12:03.361  3514  3526 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3fff28000 size 0x2000
+11-10 08:12:03.362  1710  1781 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-10 08:12:03.362  1710  1781 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-10 08:12:03.363  3514  3566 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+11-10 08:12:03.374  3514  3566 W libc    : Unable to set property "qemu.gles" to "1": error code: 0x18
+11-10 08:12:03.375  3514  3566 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+11-10 08:12:03.375  3514  3566 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-10 08:12:03.375  3514  3566 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-10 08:12:03.379  3514  3566 D HostConnection: HostConnection::get() New Host Connection established 0x75b07ea72280, tid 3566
+11-10 08:12:03.380  3514  3566 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 08:12:03.383  3514  3566 D EGL_emulation: eglCreateContext: 0x75b07ea723c0: maj 3 min 0 rcv 3
+11-10 08:12:03.384  3514  3566 D EGL_emulation: eglMakeCurrent: 0x75b07ea723c0: ver 3 0 (tinfo 0x75b07ea183e0)
+11-10 08:12:03.729  1904  2487 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+11-10 08:12:04.778  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:04.791  1904  2497 D WificondControl: Scan result ready event
+11-10 08:12:04.799  1904  2004 D WifiClientModeImpl: CMD_START_CONNECT sup state UninitializedState my state DisconnectedState nid=0 roam=false
+11-10 08:12:04.800  1904  2004 I WifiClientModeImpl: Connecting with 02:15:b2:00:00:00 as the mac address
+11-10 08:12:04.800  1790  1790 W wificond: Scan is not started. Ignore abort request
+11-10 08:12:04.801  1904  2004 D SupplicantStaIfaceHal: connectToNetwork "AndroidWifi"NONE
+11-10 08:12:04.801  1904  2004 I SupplicantStaIfaceHal: addSupplicantStaNetwork via HIDL
+11-10 08:12:04.891  2150  2150 I wpa_supplicant: wlan0: SME: Trying to authenticate with 02:15:b2:00:01:00 (SSID='AndroidWifi' freq=2447 MHz)
+11-10 08:12:04.894  1842  1842 I hostapd : wlan1: STA 02:15:b2:00:00:00 IEEE 802.11: authenticated
+11-10 08:12:04.895  1842  1842 I hostapd : wlan1: STA 02:15:b2:00:00:00 IEEE 802.11: authenticated
+11-10 08:12:04.897  2150  2150 I wpa_supplicant: wlan0: Trying to associate with 02:15:b2:00:01:00 (SSID='AndroidWifi' freq=2447 MHz)
+11-10 08:12:04.902  1842  1842 I hostapd : wlan1: STA 02:15:b2:00:00:00 IEEE 802.11: associated (aid 1)
+11-10 08:12:04.902  1842  1842 I hostapd : wlan1: STA 02:15:b2:00:00:00 IEEE 802.11: associated (aid 1)
+11-10 08:12:04.903  1842  1842 I hostapd : wlan1: AP-STA-CONNECTED 02:15:b2:00:00:00
+11-10 08:12:04.906  1664  1664 I netd    : interfaceGetCfg("wlan0") <0.11ms>
+11-10 08:12:04.907  2150  2150 I wpa_supplicant: wlan0: Associated with 02:15:b2:00:01:00
+11-10 08:12:04.907  2150  2150 I wpa_supplicant: wlan0: CTRL-EVENT-CONNECTED - Connection to 02:15:b2:00:01:00 completed [id=0 id_str=%7B%22configKey%22%3A%22%5C%22AndroidWifi%5C%22NONE%22%2C%22creatorUid%22%3A%221000%22%7D]
+11-10 08:12:04.907  2150  2150 I wpa_supplicant: wlan0: CTRL-EVENT-SUBNET-STATUS-UPDATE status=0
+11-10 08:12:04.911  1904  2004 D ConnectivityService: registerNetworkAgent NetworkAgentInfo{ ni{[type: WIFI[], state: CONNECTING/CONNECTING, reason: (unspecified), extra: (none), failover: false, available: true, roaming: false]}  network{101}  nethandle{437197393933}  lp{{LinkAddresses: [ ] DnsAddresses: [ ] Domains: null MTU: 0 Routes: [ ]}}  nc{[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&NOT_VPN&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps Specifier: <WifiNetworkAgentSpecifier [WifiConfiguration=, SSID="AndroidWifi", BSSID=02:15:b2:00:01:00, mOriginalRequestorUid=-1, mOriginalRequestorPackageName=]> SSID: "AndroidWifi"]}  Score{20}  everValidated{false}  lastValidated{false}  created{false} lingering{false} explicitlySelected{false} acceptUnvalidated{false} everCaptivePortalDetected{false} lastCaptivePortalDetected{false} captivePortalValidationPending{false} partialConnectivity{false} acceptPartialConnectivity{false} clat{mBaseIface: null, mIface: null, mState: IDLE} }
+11-10 08:12:04.912  1904  2004 E SupplicantStaIfaceHal: ISupplicantStaIface.setPowerSave failed: {.code = FAILURE_UNKNOWN, .debugMessage = }
+11-10 08:12:04.914  1664  1886 I netd    : interfaceGetCfg("wlan0") <0.09ms>
+11-10 08:12:04.915  1904  2007 D ConnectivityService: NetworkAgentInfo [WIFI () - 101] EVENT_NETWORK_INFO_CHANGED, going from null to CONNECTING
+11-10 08:12:04.916  1664  1886 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2232
+11-10 08:12:04.917  1664  1886 I netd    : interfaceSetIPv6PrivacyExtensions("wlan0", "true") <0.11ms>
+11-10 08:12:04.917  1664  1886 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2232
+11-10 08:12:04.917  1664  1886 I netd    : setIPv6AddrGenMode("wlan0", 0) <0.09ms>
+11-10 08:12:04.917  1664  1886 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2232
+11-10 08:12:04.918  1664  1886 I netd    : interfaceSetEnableIPv6("wlan0", "true") <0.11ms>
+11-10 08:12:04.919  1664  1886 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2232
+11-10 08:12:04.919  1664  1886 I netd    : setProcSysNet(4, 2, "wlan0", "retrans_time_ms", "750") <0.08ms>
+11-10 08:12:04.921  1664  1886 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2232
+11-10 08:12:04.921  1664  1886 I netd    : setProcSysNet(4, 2, "wlan0", "ucast_solicit", "5") <0.14ms>
+11-10 08:12:04.921  1664  1886 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2232
+11-10 08:12:04.921  1664  1886 I netd    : setProcSysNet(6, 2, "wlan0", "retrans_time_ms", "750") <0.07ms>
+11-10 08:12:04.921  1664  1886 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2232
+11-10 08:12:04.921  1664  1886 I netd    : setProcSysNet(6, 2, "wlan0", "ucast_solicit", "5") <0.07ms>
+11-10 08:12:04.922  1904  2007 D ConnectivityService: NetworkAgentInfo [WIFI () - 101] EVENT_NETWORK_INFO_CHANGED, going from CONNECTING to CONNECTING
+11-10 08:12:04.924  1904  2007 D ConnectivityService: Adding iface wlan0 to network 101
+11-10 08:12:04.924  1664  1886 E Netd    : no such netId 101
+11-10 08:12:04.924  1664  1886 I netd    : networkAddInterface(101, "wlan0") -> ServiceSpecificException(64, "Machine is not on the network") <0.03ms>
+11-10 08:12:04.924  1904  2007 E ConnectivityService: Exception adding interface: java.lang.IllegalStateException: android.os.ServiceSpecificException: Machine is not on the network (code 64)
+11-10 08:12:04.924  1664  1886 E Netd    : no such netId 101
+11-10 08:12:04.924  1664  1886 I netd    : networkAddRoute(101, "wlan0", "fe80::/64", "") -> ServiceSpecificException(64, "Machine is not on the network") <0.03ms>
+11-10 08:12:04.952  1664  1664 I netd    : trafficSwapActiveStatsMap() <43.31ms>
+11-10 08:12:04.955  1664  1664 I netd    : tetherGetStats() <0.39ms>
+11-10 08:12:04.991  1664  1664 I netd    : trafficSwapActiveStatsMap() <33.81ms>
+11-10 08:12:04.993  1664  1664 I netd    : tetherGetStats() <0.59ms>
+11-10 08:12:04.999  2232  2367 D DhcpClient: Broadcasting DHCPDISCOVER
+11-10 08:12:05.002  2232  3569 D DhcpClient: Receive thread started
+11-10 08:12:05.002  2232  3569 D DhcpClient: Received packet: 02:15:b2:00:00:00 OFFER, ip /10.0.2.16, mask /255.255.255.0, DNS servers: /10.0.2.3 , gateways [/10.0.2.2] lease time 86400, domain null
+11-10 08:12:05.015  2232  2367 D DhcpClient: Got pending lease: android.net.networkstack.DhcpResults@a38aeab DHCP server /10.0.2.2 Vendor info null lease 86400 seconds Servername 
+11-10 08:12:05.016  2232  2367 D DhcpClient: Broadcasting DHCPREQUEST ciaddr=0.0.0.0 request=10.0.2.16 serverid=10.0.2.2
+11-10 08:12:05.017  2232  3569 D DhcpClient: Received packet: 02:15:b2:00:00:00 ACK: your new IP /10.0.2.16, netmask /255.255.255.0, gateways [/10.0.2.2] DNS servers: /10.0.2.3 , lease time 86400
+11-10 08:12:05.017  2232  2367 D DhcpClient: Confirmed lease: android.net.networkstack.DhcpResults@c6498a1 DHCP server /10.0.2.2 Vendor info null lease 86400 seconds Servername 
+11-10 08:12:05.019  1904  2004 E SupplicantStaIfaceHal: ISupplicantStaIface.setPowerSave failed: {.code = FAILURE_UNKNOWN, .debugMessage = }
+11-10 08:12:05.021  1664  1664 E Netd    : no such netId 101
+11-10 08:12:05.021  1664  1664 I netd    : networkAddRoute(101, "wlan0", "10.0.2.0/24", "") -> ServiceSpecificException(64, "Machine is not on the network") <0.04ms>
+11-10 08:12:05.021  1904  2007 E ConnectivityService: Exception in addRoute for non-gateway: java.lang.IllegalStateException: android.os.ServiceSpecificException: Machine is not on the network (code 64)
+11-10 08:12:05.021  1664  1664 E Netd    : no such netId 101
+11-10 08:12:05.021  1664  1664 I netd    : networkAddRoute(101, "wlan0", "0.0.0.0/0", "10.0.2.2") -> ServiceSpecificException(64, "Machine is not on the network") <0.03ms>
+11-10 08:12:05.021  1904  2007 E ConnectivityService: Exception in addRoute for gateway: java.lang.IllegalStateException: android.os.ServiceSpecificException: Machine is not on the network (code 64)
+11-10 08:12:05.022  1664  1664 W ServiceManager: Permission failure: android.permission.NETWORK_STACK from uid=1073 pid=2232
+11-10 08:12:05.022  1664  1664 I netd    : interfaceSetCfg() <0.26ms>
+11-10 08:12:05.023  2232  2367 D DhcpClient: Scheduling renewal in 43199s
+11-10 08:12:05.023  2232  2367 D DhcpClient: Scheduling rebind in 75599s
+11-10 08:12:05.023  2232  2367 D DhcpClient: Scheduling expiry in 86399s
+11-10 08:12:05.052  2042  2042 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{1eabc09 V.E...... ......ID 3,0-21,22 #7f0a03ef app:id/wifi_group} during layout: running second layout pass
+11-10 08:12:05.052  2042  2042 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{f0e341 V.E...... ......ID 3,0-21,22 #7f0a03ef app:id/wifi_group} during layout: running second layout pass
+11-10 08:12:05.052  2042  2042 W View    : requestLayout() improperly called by com.android.keyguard.AlphaOptimizedLinearLayout{8833dc3 V.E...... ......ID 3,0-21,22 #7f0a03ef app:id/wifi_group} during layout: running second layout pass
+11-10 08:12:05.071  1664  1664 I netd    : trafficSwapActiveStatsMap() <45.08ms>
+11-10 08:12:05.072  1664  1664 I netd    : tetherGetStats() <0.39ms>
+11-10 08:12:05.075  1904  2007 D ConnectivityService: Setting DNS servers for network 101 to [/10.0.2.3]
+11-10 08:12:05.075  1904  2007 D DnsManager: setDnsConfigurationForNetwork(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, , [])
+11-10 08:12:05.075  1664  1664 I netd    : DnsResolverService::setResolverConfiguration(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, [], []) -> (-64) (0.03ms)
+11-10 08:12:05.075  1664  1664 I netd    : setResolverConfiguration() -> ServiceSpecificException(64, "Machine is not on the network") <0.13ms>
+11-10 08:12:05.075  1904  2007 E DnsManager: Error setting DNS configuration: android.os.ServiceSpecificException: Machine is not on the network (code 64)
+11-10 08:12:05.093  3527  3538 I v.tiktokupgrad: Background young concurrent copying GC freed 92509(2999KB) AllocSpace objects, 4(208KB) LOS objects, 33% free, 6043KB/9033KB, paused 5.711ms total 102.617ms
+11-10 08:12:05.121  1664  1664 I netd    : trafficSwapActiveStatsMap() <44.42ms>
+11-10 08:12:05.122  1664  1664 I netd    : tetherGetStats() <0.28ms>
+11-10 08:12:05.125  1904  2007 D ConnectivityService: NetworkAgentInfo [WIFI () - 101] EVENT_NETWORK_INFO_CHANGED, going from CONNECTING to CONNECTED
+11-10 08:12:05.126  1664  1664 D TcpSocketMonitor: resuming tcpinfo polling (interval=30000ms)
+11-10 08:12:05.126  1664  1664 I netd    : networkCreatePhysical(101, 0) <0.04ms>
+11-10 08:12:05.126  1664  1664 I netd    : createNetworkCache(101) <0.02ms>
+11-10 08:12:05.127  1904  2007 W DnsManager: updatePrivateDns(101, PrivateDnsConfig{true:/[]})
+11-10 08:12:05.127  1904  2007 D ConnectivityService: Setting DNS servers for network 101 to [/10.0.2.3]
+11-10 08:12:05.127  1904  2007 D DnsManager: setDnsConfigurationForNetwork(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, , [10.0.2.3])
+11-10 08:12:05.127  1664  1664 I netd    : DnsResolverService::setResolverConfiguration(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, [10.0.2.3], []) -> (0) (0.2ms)
+11-10 08:12:05.127  1664  1664 I netd    : setResolverConfiguration() <0.25ms>
+11-10 08:12:05.129  1904  2007 D ConnectivityService: Adding iface wlan0 to network 101
+11-10 08:12:05.130  1664  1664 I netd    : networkAddInterface(101, "wlan0") <0.82ms>
+11-10 08:12:05.131  1664  1664 I netd    : networkAddRoute(101, "wlan0", "fe80::/64", "") <0.06ms>
+11-10 08:12:05.131  1664  1664 I netd    : networkAddRoute(101, "wlan0", "10.0.2.0/24", "") <0.05ms>
+11-10 08:12:05.131  1664  1664 I netd    : networkAddRoute(101, "wlan0", "0.0.0.0/0", "10.0.2.2") <0.04ms>
+11-10 08:12:05.132  1904  2007 D ConnectivityService: Setting DNS servers for network 101 to [/10.0.2.3]
+11-10 08:12:05.132  1904  2007 D DnsManager: setDnsConfigurationForNetwork(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, , [10.0.2.3])
+11-10 08:12:05.132  1664  1664 I netd    : DnsResolverService::setResolverConfiguration(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, [10.0.2.3], []) -> (0) (0.05ms)
+11-10 08:12:05.132  1664  1664 I netd    : setResolverConfiguration() <0.12ms>
+11-10 08:12:05.135  1664  3571 W DnsTlsSocket: SSL_connect error 5, errno=111
+11-10 08:12:05.181  1664  1664 I netd    : trafficSwapActiveStatsMap() <47.02ms>
+11-10 08:12:05.182  1664  1664 I netd    : tetherGetStats() <0.36ms>
+11-10 08:12:05.188  1904  2004 D WifiNetworkAgent: NetworkAgent: Received signal strength thresholds: []
+11-10 08:12:05.188  1904  2004 E WifiVendorHal: stopRssiMonitoring(l.2042) failed {.code = ERROR_NOT_AVAILABLE, .description = }
+11-10 08:12:05.192  1664  1664 I netd    : bandwidthRemoveInterfaceQuota("radio0") <0.44ms>
+11-10 08:12:05.193  1664  1664 I netd    : bandwidthSetInterfaceQuota("radio0", 9223372036854775807) <0.70ms>
+11-10 08:12:05.194  1664  1664 I netd    : bandwidthSetGlobalAlert(2097152) <0.10ms>
+11-10 08:12:05.201  1904  1923 I DropBoxManagerService: add tag=system_app_strictmode isTagEnabled=true flags=0x2
+11-10 08:12:05.209  2232  3573 D NetworkMonitor/101: PROBE_DNS www.google.com 15ms OK 142.251.150.119,142.251.156.119,142.251.152.119,142.251.153.119,142.251.154.119,142.251.157.119,142.251.155.119,142.251.151.119
+11-10 08:12:05.212  1664  3577 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+11-10 08:12:05.215  2232  3574 D NetworkMonitor/101: PROBE_DNS connectivitycheck.gstatic.com 19ms OK 142.251.150.120
+11-10 08:12:05.216  1664  3579 E ResolverController: No valid NAT64 prefix (101, <unspecified>/0)
+11-10 08:12:05.252  2232  3574 D NetworkMonitor/101: PROBE_HTTP http://connectivitycheck.gstatic.com/generate_204 time=34ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Tue, 10 Nov 2026 08:12:05 GMT], X-Android-Received-Millis=[1794298325249], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1794298325234]}
+11-10 08:12:05.267  2232  3573 D NetworkMonitor/101: PROBE_HTTPS https://www.google.com/generate_204 time=58ms ret=204 request={Connection=[close], User-Agent=[Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.32 Safari/537.36]} headers={null=[HTTP/1.1 204 No Content], Alt-Svc=[h3=":443"; ma=2592000,h3-29=":443"; ma=2592000], Connection=[close], Content-Length=[0], Cross-Origin-Resource-Policy=[cross-origin], Date=[Tue, 10 Nov 2026 08:12:05 GMT], X-Android-Received-Millis=[1794298325266], X-Android-Response-Source=[NETWORK 204], X-Android-Selected-Protocol=[http/1.1], X-Android-Sent-Millis=[1794298325252]}
+11-10 08:12:05.272  2232  3572 D NetworkMonitor/101: isCaptivePortal: isSuccessful()=true isPortal()=false RedirectUrl=null isPartialConnectivity()=false Time=74ms
+11-10 08:12:05.214  1904  1923 I chatty  : uid=1000(system) android.io identical 7 lines
+11-10 08:12:05.215  1904  1923 I DropBoxManagerService: add tag=system_app_strictmode isTagEnabled=true flags=0x2
+11-10 08:12:05.274  1904  2007 D ConnectivityService: NetworkAgentInfo [WIFI () - 101] validation passed
+11-10 08:12:05.282  1664  1664 I netd    : idletimerAddInterface("wlan0", 15, "1") <5.46ms>
+11-10 08:12:05.285  1664  1664 I netd    : idletimerRemoveInterface("radio0", 10, "0") <1.12ms>
+11-10 08:12:05.287  1904  2007 D ConnectivityService: Switching to new default network: NetworkAgentInfo{ ni{[type: WIFI[], state: CONNECTED/CONNECTED, reason: (unspecified), extra: (none), failover: false, available: true, roaming: false]}  network{101}  nethandle{437197393933}  lp{{InterfaceName: wlan0 LinkAddresses: [ fe80::15:b2ff:fe00:0/64,10.0.2.16/24 ] DnsAddresses: [ /10.0.2.3 ] Domains: null MTU: 0 TcpBufferSizes: 524288,1048576,2097152,262144,524288,1048576 Routes: [ fe80::/64 -> :: wlan0,10.0.2.0/24 -> 0.0.0.0 wlan0,0.0.0.0/0 -> 10.0.2.2 wlan0 ]}}  nc{[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps Specifier: <WifiNetworkAgentSpecifier [WifiConfiguration=, SSID="AndroidWifi", BSSID=02:15:b2:00:01:00, mOriginalRequestorUid=-1, mOriginalRequestorPackageName=]> SignalStrength: -30 SSID: "AndroidWifi"]}  Score{60}  everValidated{true}  lastValidated{true}  created{true} lingering{false} explicitlySelected{false} acceptUnvalidated{false} everCaptivePortalDetected{false} lastCaptivePortalDetected{false} captivePortalValidationPending{false} partialConnectivity{false} acceptPartialConnectivity{false} clat{mBaseIface: null, mIface: null, mState: IDLE} }
+11-10 08:12:05.287  1664  1664 I netd    : networkSetDefault(101) <0.16ms>
+11-10 08:12:05.341  1664  1664 I netd    : trafficSwapActiveStatsMap() <49.51ms>
+11-10 08:12:05.342  1664  1886 I netd    : tetherGetStats() <0.29ms>
+11-10 08:12:05.346  1904  1921 I GnssNetworkConnectivityHandler: updateNetworkState, state=CLOSED, connected=true, network=101, capabilities=[ Transports: WIFI Capabilities: NOT_METERED&INTERNET&NOT_RESTRICTED&TRUSTED&NOT_VPN&VALIDATED&NOT_ROAMING&FOREGROUND&NOT_CONGESTED&NOT_SUSPENDED LinkUpBandwidth>=1048576Kbps LinkDnBandwidth>=1048576Kbps SignalStrength: -30 SSID: "AndroidWifi"], apn: null, availableNetworkCount: 2
+11-10 08:12:05.347  1904  2176 D NetworkTimeUpdateService: New default network 101; checking time.
+11-10 08:12:05.347  1904  2007 D ConnectivityService: Lingering NetworkAgentInfo [MOBILE (LTE) - 100] for 30000ms
+11-10 08:12:05.348  1904  2007 D ConnectivityService: Sending DISCONNECTED broadcast for type 0 NetworkAgentInfo [MOBILE (LTE) - 100] isDefaultNetwork=true
+11-10 08:12:05.349  1904  2007 D ConnectivityService: Sending CONNECTED broadcast for type 1 NetworkAgentInfo [WIFI () - 101] isDefaultNetwork=true
+11-10 08:12:05.362  1664  1886 I netd    : bandwidthRemoveInterfaceQuota("radio0") <0.46ms>
+11-10 08:12:05.362  1664  1886 I netd    : bandwidthSetInterfaceQuota("radio0", 9223372036854775807) <0.26ms>
+11-10 08:12:05.363  1664  1886 I netd    : bandwidthSetGlobalAlert(2097152) <0.07ms>
+11-10 08:12:05.363  1664  1886 I netd    : bandwidthRemoveInterfaceQuota("radio0") <0.25ms>
+11-10 08:12:05.364  1664  1886 I netd    : bandwidthSetInterfaceQuota("radio0", 9223372036854775807) <0.21ms>
+11-10 08:12:05.364  1664  1886 I netd    : bandwidthSetGlobalAlert(2097152) <0.04ms>
+11-10 08:12:05.381  1664  1664 I netd    : trafficSwapActiveStatsMap() <39.55ms>
+11-10 08:12:05.381  1664  1664 I netd    : tetherGetStats() <0.28ms>
+11-10 08:12:05.388  1904  2007 D ConnectivityService: Setting DNS servers for network 101 to [/10.0.2.3]
+11-10 08:12:05.388  1904  2007 D DnsManager: setDnsConfigurationForNetwork(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, , [10.0.2.3])
+11-10 08:12:05.388  1664  1664 I netd    : DnsResolverService::setResolverConfiguration(101, [10.0.2.3], [], 1800, 25, 8, 64, 0, 0, [10.0.2.3], []) -> (0) (0.2ms)
+11-10 08:12:05.388  1664  1664 I netd    : setResolverConfiguration() <0.24ms>
+11-10 08:12:05.390  1664  3580 W DnsTlsSocket: SSL_connect error 5, errno=111
+11-10 08:12:05.766  3527  3581 D ProfileInstaller: Installing profile for com.avatarsdev.tiktokupgrade
+11-10 08:12:05.992  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:05.999  1664  1664 I netd    : networkAddRoute(101, "wlan0", "fec0::/64", "") <0.09ms>
+11-10 08:12:05.999  1664  1664 E Netd    : Error adding route ::/0 -> fe80::2 wlan0 to table 1003: File exists
+11-10 08:12:05.999  1664  1664 I netd    : networkAddRoute(101, "wlan0", "::/0", "fe80::2") <0.05ms>
+11-10 08:12:06.031  1664  1664 I netd    : trafficSwapActiveStatsMap() <31.17ms>
+11-10 08:12:06.032  1664  1664 I netd    : tetherGetStats() <0.27ms>
+11-10 08:12:07.333  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:08.565  1904  2497 I ActivityManager: Killing 3060:com.android.carrierconfig/u0a98 (adj 985): empty #17
+11-10 08:12:08.474  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:08.569  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:08.570  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:08.579  2369  2369 W RichInputMethodSubtype: Can't find emoji subtype
+11-10 08:12:08.579  2369  2369 W RichInputMethodSubtype: No input method subtype found; returning dummy subtype: Multi-lingual subtype: android.view.inputmethod.InputMethodSubtype@d78b2ed0, zz
+11-10 08:12:08.602  1665  1665 I Zygote  : Process 3060 exited due to signal 9 (Killed)
+11-10 08:12:08.602  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:08.602  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:08.624  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:08.624  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:08.643  2369  2369 I EmojiCategory: Last Emoji category id is 8
+11-10 08:12:08.647  2369  2369 W ViewPager: Requested offscreen page limit 0 too small; defaulting to 1
+11-10 08:12:08.647  1904  1932 I libprocessgroup: Successfully killed process cgroup uid 10098 pid 3060 in 81ms
+11-10 08:12:08.659  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:08.659  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:08.671  2369  2369 I LatinIME: Starting input. Cursor position = 0,0
+11-10 08:12:08.672  3527  3527 W IInputConnectionWrapper: getSelectedText on inactive InputConnection
+11-10 08:12:08.672  3527  3527 W IInputConnectionWrapper: requestCursorAnchorInfo on inactive InputConnection
+11-10 08:12:08.672  3527  3527 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+11-10 08:12:08.678  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:08.678  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:08.684  2369  2369 E RichInputConnection: Unable to connect to the editor to retrieve text.
+11-10 08:12:08.684  2369  2369 D RichInputConnection: Will try to retrieve text later.
+11-10 08:12:08.689  3527  3527 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+11-10 08:12:08.689  2369  2369 E RichInputConnection: Unable to connect to the editor to retrieve text.
+11-10 08:12:08.689  2369  2369 W RichInputConnection: Unable to connect to the editor. Setting caps mode without knowing text.
+11-10 08:12:08.702  2369  2383 I putmethod.lati: Background concurrent copying GC freed 23250(4029KB) AllocSpace objects, 11(376KB) LOS objects, 49% free, 2841KB/5683KB, paused 5.019ms total 53.714ms
+11-10 08:12:08.703  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:08.703  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:08.704  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:08.704  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:08.705  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:08.705  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:08.706  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:08.706  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:08.707  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:08.707  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:08.708  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:08.708  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:08.708  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:08.708  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:08.709  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:08.709  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:08.710  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:08.710  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:08.720  1710  1778 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-10 08:12:08.721  1710  1778 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-10 08:12:08.726  2369  2369 I LatinIME: Starting input. Cursor position = 0,0
+11-10 08:12:08.726  3527  3527 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+11-10 08:12:08.726  3527  3527 W IInputConnectionWrapper: getSelectedText on inactive InputConnection
+11-10 08:12:08.727  3527  3527 W IInputConnectionWrapper: requestCursorAnchorInfo on inactive InputConnection
+11-10 08:12:08.727  3527  3527 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+11-10 08:12:08.727  2369  2369 E RichInputConnection: Unable to connect to the editor to retrieve text.
+11-10 08:12:08.727  2369  2369 D RichInputConnection: Will try to retrieve text later.
+11-10 08:12:08.728  3527  3527 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+11-10 08:12:08.728  2369  2369 E RichInputConnection: Unable to connect to the editor to retrieve text.
+11-10 08:12:08.728  2369  2369 W RichInputConnection: Unable to connect to the editor. Setting caps mode without knowing text.
+11-10 08:12:08.728  3527  3527 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+11-10 08:12:08.728  2369  2369 E RichInputConnection: Unable to connect to the editor to retrieve text.
+11-10 08:12:08.728  2369  2369 W RichInputConnection: Unable to connect to the editor. Setting caps mode without knowing text.
+11-10 08:12:08.729  3527  3527 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+11-10 08:12:08.730  2369  2369 E RichInputConnection: Unable to connect to the editor to retrieve text.
+11-10 08:12:08.730  2369  2369 D RichInputConnection: Will try to retrieve text later.
+11-10 08:12:08.731  3527  3527 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+11-10 08:12:08.731  2369  2369 E RichInputConnection: Unable to connect to the editor to retrieve text.
+11-10 08:12:08.731  2369  2369 W RichInputConnection: Unable to connect to the editor. Setting caps mode without knowing text.
+11-10 08:12:08.736  2369  2369 I LatinIME: Starting input. Cursor position = 0,0
+11-10 08:12:08.740  1904  2505 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.avatarsdev.tiktokupgrade.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} from uid 10116
+11-10 08:12:08.744  1904  1925 E system_server: Invalid ID 0x00000000.
+11-10 08:12:08.746  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@a0d5023 in: PAUSED
+11-10 08:12:08.746  3527  3527 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.avatarsdev.tiktokupgrade.ui.MainActivity@a0d5023
+11-10 08:12:08.747  1904  2505 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:08.749  1904  1924 I ActivityManager: Killing 2915:com.android.calendar/u0a105 (adj 985): empty #17
+11-10 08:12:08.747  1904  2505 I chatty  : uid=1000(system) Binder:1904_8 identical 18 lines
+11-10 08:12:08.747  1904  2505 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:08.757  1665  1665 D Zygote  : Forked child process 3587
+11-10 08:12:08.760  1904  1931 I ActivityManager: Start proc 3587:com.avatarsdev.tiktokupgrade.test/u0a117 for activity {com.avatarsdev.tiktokupgrade.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity}
+11-10 08:12:08.760  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:08.764  2369  3586 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+11-10 08:12:08.764  2369  3586 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+11-10 08:12:08.765  3587  3587 I tokupgrade.tes: Late-enabling -Xcheck:jni
+11-10 08:12:08.765  2369  3586 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+11-10 08:12:08.766  2369  3586 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-10 08:12:08.766  2369  3586 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-10 08:12:08.781  2369  3586 D HostConnection: HostConnection::get() New Host Connection established 0x7e413141a700, tid 3586
+11-10 08:12:08.782  2369  3586 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 08:12:08.784  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:08.788  2369  3586 D EGL_emulation: eglCreateContext: 0x7e413152e380: maj 3 min 0 rcv 3
+11-10 08:12:08.789  2369  3586 D EGL_emulation: eglMakeCurrent: 0x7e413152e380: ver 3 0 (tinfo 0x7e413140c960)
+11-10 08:12:08.793  1665  1665 I Zygote  : Process 2915 exited due to signal 9 (Killed)
+11-10 08:12:08.794  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 790528
+11-10 08:12:08.795  1567  1567 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-10 08:12:08.795  2369  3586 W Gralloc3: mapper 3.x is not supported
+11-10 08:12:08.795  2369  3586 D HostConnection: createUnique: call
+11-10 08:12:08.795  2369  3586 D HostConnection: HostConnection::get() New Host Connection established 0x7e413152e4c0, tid 3586
+11-10 08:12:08.796  2369  3586 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 08:12:08.796  2369  3586 D eglCodecCommon: allocate: Ask for block of size 0x1000
+11-10 08:12:08.796  2369  3586 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3fff26000 size 0x2000
+11-10 08:12:08.797  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 790528
+11-10 08:12:08.798  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 790528
+11-10 08:12:08.803  2369  3586 D EGL_emulation: eglMakeCurrent: 0x7e413152e380: ver 3 0 (tinfo 0x7e413140c960)
+11-10 08:12:08.804  3587  3587 E tokupgrade.tes: Unknown bits set in runtime_flags: 0x8000
+11-10 08:12:08.805  3587  3587 W tokupgrade.tes: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 08:12:08.812  1904  3463 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:08.815  1904  3463 I chatty  : uid=1000(system) Binder:1904_11 identical 28 lines
+11-10 08:12:08.815  1904  3463 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:08.817  1904  1925 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:08.818  1904  1925 I chatty  : uid=1000(system) android.anim identical 18 lines
+11-10 08:12:08.818  1904  1925 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:08.822  1710  1778 D PermissionCache: checking android.permission.READ_FRAME_BUFFER for uid=1000 => granted (53 us)
+11-10 08:12:08.822  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:08.833  1904  1932 I libprocessgroup: Successfully killed process cgroup uid 10105 pid 2915 in 83ms
+11-10 08:12:08.991  3527  3551 D EGL_emulation: eglMakeCurrent: 0x7e4131a54dc0: ver 3 0 (tinfo 0x7e4131a185e0)
+11-10 08:12:08.998  1904  1904 W Looper  : Slow dispatch took 129ms main h=com.android.server.notification.NotificationManagerService$WorkerHandler c=com.android.server.notification.NotificationManagerService$NotificationListeners$2@5d481da m=0
+11-10 08:12:09.008  1904  1924 W system_server: Long monitor contention with owner android.anim (1925) at void com.android.server.wm.WindowSurfacePlacer.lambda$new$0$WindowSurfacePlacer()(WindowSurfacePlacer.java:61) waiters=0 in void com.android.server.wm.ActivityMetricsLogger.checkVisibility(com.android.server.wm.TaskRecord, com.android.server.wm.ActivityRecord) for 143ms
+11-10 08:12:09.050  1904  1915 I system_server: Background young concurrent copying GC freed 64316(4078KB) AllocSpace objects, 26(1064KB) LOS objects, 41% free, 7514KB/12MB, paused 3.496ms total 304.107ms
+11-10 08:12:09.067  3587  3587 I tokupgrade.tes: The ClassLoaderContext is a special shared library.
+11-10 08:12:09.067  3587  3587 I tokupgrade.tes: The ClassLoaderContext is a special shared library.
+11-10 08:12:09.119  1710  1778 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-10 08:12:09.119  1710  1778 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-10 08:12:09.149  3587  3609 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+11-10 08:12:09.149  3587  3609 W libc    : Unable to set property "qemu.gles" to "1": connection failed; errno=13 (Permission denied)
+11-10 08:12:09.150  3587  3609 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+11-10 08:12:09.151  3587  3609 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-10 08:12:09.151  3587  3609 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-10 08:12:09.249  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@a0d5023 in: STOPPED
+11-10 08:12:09.249  3527  3527 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.avatarsdev.tiktokupgrade.ui.MainActivity@a0d5023
+11-10 08:12:09.252  1710  1778 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-10 08:12:09.252  1710  1778 E SurfaceFlinger: ro.sf.lcd_density must be defined as a build property
+11-10 08:12:09.252  1904  3610 D libEGL  : Emulator has host GPU support, qemu.gles is set to 1.
+11-10 08:12:09.263  3587  3607 D HostConnection: HostConnection::get() New Host Connection established 0x7e413141aca0, tid 3607
+11-10 08:12:09.264  3587  3607 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 08:12:09.277  3587  3607 D EGL_emulation: eglCreateContext: 0x7e413141b6a0: maj 3 min 0 rcv 3
+11-10 08:12:09.278  1904  3610 W libc    : Unable to set property "qemu.gles" to "1": error code: 0x18
+11-10 08:12:09.278  3587  3607 D EGL_emulation: eglMakeCurrent: 0x7e413141b6a0: ver 3 0 (tinfo 0x7e413149a900)
+11-10 08:12:09.278  1904  3610 D libEGL  : loaded /vendor/lib64/egl/libEGL_emulation.so
+11-10 08:12:09.279  1904  3610 D libEGL  : loaded /vendor/lib64/egl/libGLESv1_CM_emulation.so
+11-10 08:12:09.279  1904  3610 D libEGL  : loaded /vendor/lib64/egl/libGLESv2_emulation.so
+11-10 08:12:09.288  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:09.289  1567  1567 I hwservicemanager: getTransport: Cannot find entry android.hardware.graphics.mapper@3.0::IMapper/default in either framework or device manifest.
+11-10 08:12:09.289  3587  3607 W Gralloc3: mapper 3.x is not supported
+11-10 08:12:09.290  3587  3607 D HostConnection: createUnique: call
+11-10 08:12:09.291  3587  3607 D HostConnection: HostConnection::get() New Host Connection established 0x7e413141b7e0, tid 3607
+11-10 08:12:09.291  3587  3607 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 08:12:09.291  1904  3610 D HostConnection: HostConnection::get() New Host Connection established 0x7e40e07715a0, tid 3610
+11-10 08:12:09.292  3587  3607 D eglCodecCommon: allocate: Ask for block of size 0x1000
+11-10 08:12:09.292  1904  3610 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 08:12:09.292  3587  3607 D eglCodecCommon: allocate: ioctl allocate returned offset 0x3fff24000 size 0x2000
+11-10 08:12:09.292  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:09.293  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:09.293  3587  3607 D EGL_emulation: eglMakeCurrent: 0x7e413141b6a0: ver 3 0 (tinfo 0x7e413149a900)
+11-10 08:12:09.294  1904  3610 D EGL_emulation: eglCreateContext: 0x7e40e081f060: maj 3 min 0 rcv 3
+11-10 08:12:09.295  1904  3610 D EGL_emulation: eglMakeCurrent: 0x7e40e081f060: ver 3 0 (tinfo 0x7e41313ebe60)
+11-10 08:12:09.370  1904  1929 I ActivityTaskManager: Displayed com.avatarsdev.tiktokupgrade.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +629ms
+11-10 08:12:09.372  1904  2938 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:09.372  1904  2938 I chatty  : uid=1000(system) Binder:1904_E identical 8 lines
+11-10 08:12:09.372  1904  2938 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:09.389  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@a0d5023 in: DESTROYED
+11-10 08:12:09.389  3527  3527 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-10 08:12:09.390  1904  1920 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:09.390  1904  1920 I chatty  : uid=1000(system) Binder:1904_2 identical 8 lines
+11-10 08:12:09.390  1904  1920 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:09.441  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:09.441  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:09.471  3527  3527 W IInputConnectionWrapper: getTextBeforeCursor on inactive InputConnection
+11-10 08:12:09.474  2369  2369 E RichInputConnection: Unable to connect to the editor to retrieve text.
+11-10 08:12:09.474  2369  2369 D RichInputConnection: Will try to retrieve text later.
+11-10 08:12:09.474  2369  2369 I Choreographer: Skipped 42 frames!  The application may be doing too much work on its main thread.
+11-10 08:12:09.480  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:09.489  1697  1740 I chatty  : uid=1000(system) HwBinder:1697_2 identical 1 line
+11-10 08:12:09.490  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:09.491  2575  2777 D EGL_emulation: eglMakeCurrent: 0x7e40e63c8d00: ver 3 0 (tinfo 0x7e40e631e6c0)
+11-10 08:12:09.495  2369  3586 I OpenGLRenderer: Davey! duration=723ms; Flags=0, IntendedVsync=39895592171, Vsync=40595592143, OldestInputEvent=9223372036854775807, NewestInputEvent=0, HandleInputStart=40603825280, AnimationStart=40603865620, PerformTraversalsStart=40603923130, DrawStart=40604014700, SyncQueued=40604122410, SyncStart=40608980410, IssueDrawCommandsStart=40609011390, SwapBuffers=40609506600, FrameCompleted=40623898780, DequeueBufferDuration=37000, QueueBufferDuration=12605000, 
+11-10 08:12:09.500  1904  1925 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:09.500  1904  1925 I chatty  : uid=1000(system) android.anim identical 8 lines
+11-10 08:12:09.500  1904  1925 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:09.506  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:09.507  3527  3547 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@6baed69]
+11-10 08:12:09.507  3527  3547 I TestRunner: finished: a_sampleData_dashboard_analytics_history(com.avatarsdev.tiktokupgrade.AppFlowTest)
+11-10 08:12:09.514  3527  3547 I TestRunner: started: b_aiFeedController_parsesSpecPrompt(com.avatarsdev.tiktokupgrade.AppFlowTest)
+11-10 08:12:09.516  3527  3547 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@927bdf3]
+11-10 08:12:09.520  3527  3547 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-10 08:12:09.522  1710  2229 W ServiceManager: Permission failure: android.permission.ACCESS_SURFACE_FLINGER from uid=10100 pid=2575
+11-10 08:12:09.522  1710  2229 D PermissionCache: checking android.permission.ACCESS_SURFACE_FLINGER for uid=10100 => denied (76 us)
+11-10 08:12:09.529  2369  2369 E RichInputConnection: Unable to connect to the editor to retrieve text.
+11-10 08:12:09.529  2369  2369 D RichInputConnection: Will try to retrieve text later.
+11-10 08:12:09.531  2369  3586 D EGL_emulation: eglMakeCurrent: 0x7e413152e380: ver 3 0 (tinfo 0x7e413140c960)
+11-10 08:12:09.534  1710  1710 E Layer   : [Surface(name=AppWindowToken{213cdf9 token=Token{34c7cc0 ActivityRecord{6e91e43 u0 com.android.launcher3/.Launcher t5}}})/@0xa6966a4 - animation-leash#0] No local sync point found
+11-10 08:12:09.534  1710  1710 E Layer   : [Surface(name=AppWindowToken{bbee80f token=Token{2a5f96e ActivityRecord{86908e9 u0 com.avatarsdev.tiktokupgrade.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity t8}}})/@0x1e455c7 - animation-leash#0] No local sync point found
+11-10 08:12:09.547  3587  3607 D EGL_emulation: eglMakeCurrent: 0x7e413141b6a0: ver 3 0 (tinfo 0x7e413149a900)
+11-10 08:12:09.560  1904  2938 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.avatarsdev.tiktokupgrade/.ui.MainActivity} from uid 10116
+11-10 08:12:09.576  1904  1920 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:09.578  1904  1920 I chatty  : uid=1000(system) Binder:1904_2 identical 38 lines
+11-10 08:12:09.578  1904  1920 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:09.579  3527  3527 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@f42e8ae
+11-10 08:12:08.760  2369  2369 W RenderThread: type=1400 audit(0.0:36): avc: denied { write } for name="property_service" dev="tmpfs" ino=7860 scontext=u:r:untrusted_app_27:s0:c115,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.android.inputmethod.latin
+11-10 08:12:09.609  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:09.612  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@da35f86 in: PRE_ON_CREATE
+11-10 08:12:09.612  3527  3527 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+11-10 08:12:09.616  1904  1925 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:09.616  1904  1925 I chatty  : uid=1000(system) android.anim identical 8 lines
+11-10 08:12:09.616  1904  1925 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:09.618  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@da35f86 in: CREATED
+11-10 08:12:09.618  3527  3527 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.avatarsdev.tiktokupgrade.ui.MainActivity@da35f86
+11-10 08:12:09.619  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@da35f86 in: STARTED
+11-10 08:12:09.619  3527  3527 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.avatarsdev.tiktokupgrade.ui.MainActivity@da35f86
+11-10 08:12:09.619  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@da35f86 in: RESUMED
+11-10 08:12:09.619  3527  3527 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.avatarsdev.tiktokupgrade.ui.MainActivity@da35f86
+11-10 08:12:09.140  3587  3587 W RenderThread: type=1400 audit(0.0:37): avc: denied { write } for name="property_service" dev="tmpfs" ino=7860 scontext=u:r:untrusted_app:s0:c117,c256,c512,c768 tcontext=u:object_r:property_socket:s0 tclass=sock_file permissive=0 app=com.avatarsdev.tiktokupgrade.test
+11-10 08:12:09.631  1904  1904 I NotificationService: Cannot find enqueued record for key: -1|android|8|null|1000
+11-10 08:12:09.636  2575  2777 D EGL_emulation: eglMakeCurrent: 0x7e40e63c8d00: ver 3 0 (tinfo 0x7e40e631e6c0)
+11-10 08:12:09.671  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:09.673  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:09.681  3527  3551 D EGL_emulation: eglMakeCurrent: 0x7e4131a54dc0: ver 3 0 (tinfo 0x7e4131a185e0)
+11-10 08:12:09.711  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:09.715  1904  1929 I ActivityTaskManager: Displayed com.avatarsdev.tiktokupgrade/.ui.MainActivity: +154ms
+11-10 08:12:09.759  1904  3610 D HostConnection: HostConnection::get() New Host Connection established 0x7e40e07715a0, tid 3610
+11-10 08:12:09.760  1904  3610 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 08:12:09.761  1904  3610 D EGL_emulation: eglCreateContext: 0x7e40e081f060: maj 3 min 0 rcv 3
+11-10 08:12:09.761  1904  3610 D EGL_emulation: eglMakeCurrent: 0x7e40e081f060: ver 3 0 (tinfo 0x7e41313ebe60)
+11-10 08:12:09.890  1665  1665 D Zygote  : Forked child process 3618
+11-10 08:12:09.896  1904  1931 I ActivityManager: Start proc 3618:com.android.keychain/1000 for service {com.android.keychain/com.android.keychain.KeyChainService}
+11-10 08:12:09.899  3618  3618 W ndroid.keychai: Unexpected CPU variant for X86 using defaults: x86_64
+11-10 08:12:09.908  3618  3618 I ndroid.keychai: The ClassLoaderContext is a special shared library.
+11-10 08:12:09.915  1904  2938 I ActivityManager: Killing 3210:com.android.camera2/u0a114 (adj 985): empty #17
+11-10 08:12:09.961  1665  1665 I Zygote  : Process 3210 exited due to signal 9 (Killed)
+11-10 08:12:10.003  1904  1932 I libprocessgroup: Successfully killed process cgroup uid 10114 pid 3210 in 87ms
+11-10 08:12:10.006  2369  2369 I LatinIME: Starting input. Cursor position = 0,0
+11-10 08:12:10.026  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 790528
+11-10 08:12:10.028  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 790528
+11-10 08:12:10.030  2369  3586 D EGL_emulation: eglMakeCurrent: 0x7e413152e380: ver 3 0 (tinfo 0x7e413140c960)
+11-10 08:12:10.031  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 790528
+11-10 08:12:10.258  2042  2056 I ndroid.systemu: NativeAlloc concurrent copying GC freed 61144(3104KB) AllocSpace objects, 2(104KB) LOS objects, 49% free, 5257KB/10MB, paused 1.389ms total 121.227ms
+11-10 08:12:11.241  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:12.324  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:12.572  2369  2369 I LatinIME: Starting input. Cursor position = 0,0
+11-10 08:12:13.724  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:13.736  1904  2573 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.avatarsdev.tiktokupgrade.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} from uid 10116
+11-10 08:12:13.740  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@da35f86 in: PAUSED
+11-10 08:12:13.740  3527  3527 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.avatarsdev.tiktokupgrade.ui.MainActivity@da35f86
+11-10 08:12:13.740  1904  2573 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:13.742  1904  2573 I chatty  : uid=1000(system) Binder:1904_9 identical 48 lines
+11-10 08:12:13.742  1904  2573 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:13.743  3587  3587 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@9d228bb
+11-10 08:12:13.745  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:13.745  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:13.748  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:13.748  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:13.749  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:13.749  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:13.752  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:13.752  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:13.753  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:13.753  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:13.755  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:13.756  1904  1929 E memtrack: Couldn't load memtrack module
+11-10 08:12:13.756  1904  1929 W android.os.Debug: failed to get memory consumption info: -1
+11-10 08:12:13.759  1904  2573 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:13.759  1904  2573 I chatty  : uid=1000(system) Binder:1904_9 identical 18 lines
+11-10 08:12:13.759  1904  2573 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:13.759  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:13.773  3527  3551 D EGL_emulation: eglMakeCurrent: 0x7e4131a54dc0: ver 3 0 (tinfo 0x7e4131a185e0)
+11-10 08:12:13.775  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:13.778  1697  1740 I chatty  : uid=1000(system) HwBinder:1697_2 identical 1 line
+11-10 08:12:13.779  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:13.782  3587  3607 D EGL_emulation: eglMakeCurrent: 0x7e413141b6a0: ver 3 0 (tinfo 0x7e413149a900)
+11-10 08:12:13.788  1904  2154 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:13.788  1904  2154 I chatty  : uid=1000(system) Binder:1904_6 identical 8 lines
+11-10 08:12:13.788  1904  2154 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:13.790  1904  1929 I ActivityTaskManager: Displayed com.avatarsdev.tiktokupgrade.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity: +53ms
+11-10 08:12:13.791  1904  2154 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:13.792  1904  2154 I chatty  : uid=1000(system) Binder:1904_6 identical 8 lines
+11-10 08:12:13.792  1904  2154 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:13.796  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@da35f86 in: STOPPED
+11-10 08:12:13.797  3527  3527 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.avatarsdev.tiktokupgrade.ui.MainActivity@da35f86
+11-10 08:12:13.806  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:13.806  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:13.810  2575  2777 D EGL_emulation: eglMakeCurrent: 0x7e40e63c8d00: ver 3 0 (tinfo 0x7e40e631e6c0)
+11-10 08:12:13.815  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:13.815  1904  1925 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:13.815  1904  1925 I chatty  : uid=1000(system) android.anim identical 8 lines
+11-10 08:12:13.815  1904  1925 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:13.816  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:13.839  3587  3607 D EGL_emulation: eglMakeCurrent: 0x7e413141b6a0: ver 3 0 (tinfo 0x7e413149a900)
+11-10 08:12:13.846  2369  3586 D EGL_emulation: eglMakeCurrent: 0x7e413152e380: ver 3 0 (tinfo 0x7e413140c960)
+11-10 08:12:13.850  1710  1710 E Layer   : [Surface(name=AppWindowToken{896c713 token=Token{f6da202 ActivityRecord{5e2674d u0 com.avatarsdev.tiktokupgrade.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity t10}}})/@0x61d4af3 - animation-leash#0] No local sync point found
+11-10 08:12:13.850  1710  1710 E Layer   : [Surface(name=AppWindowToken{213cdf9 token=Token{34c7cc0 ActivityRecord{6e91e43 u0 com.android.launcher3/.Launcher t5}}})/@0xa6966a4 - animation-leash#0] No local sync point found
+11-10 08:12:13.868  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@da35f86 in: DESTROYED
+11-10 08:12:13.868  3527  3527 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-10 08:12:13.874  3527  3547 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@927bdf3]
+11-10 08:12:13.879  3527  3547 I TestRunner: finished: b_aiFeedController_parsesSpecPrompt(com.avatarsdev.tiktokupgrade.AppFlowTest)
+11-10 08:12:13.880  3527  3547 I TestRunner: started: c_realImport_5to6Nov_isSeparateFromSample(com.avatarsdev.tiktokupgrade.AppFlowTest)
+11-10 08:12:13.883  1904  3610 D HostConnection: HostConnection::get() New Host Connection established 0x7e40e07715a0, tid 3610
+11-10 08:12:13.886  1904  3610 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 08:12:13.888  1904  3610 D EGL_emulation: eglCreateContext: 0x7e40e081f060: maj 3 min 0 rcv 3
+11-10 08:12:13.888  1904  3610 D EGL_emulation: eglMakeCurrent: 0x7e40e081f060: ver 3 0 (tinfo 0x7e41313ebe60)
+11-10 08:12:13.892  3527  3547 D IdlingRegistry: Registering idling resources: [androidx.compose.ui.test.EspressoLink@875baa]
+11-10 08:12:13.894  3527  3547 W Settings: Setting always_finish_activities has moved from android.provider.Settings.System to android.provider.Settings.Global, returning read-only value.
+11-10 08:12:13.896  1904  2938 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10008000 cmp=com.avatarsdev.tiktokupgrade/.ui.MainActivity} from uid 10116
+11-10 08:12:13.898  1904  2573 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:13.918  1904  2573 I chatty  : uid=1000(system) Binder:1904_9 identical 38 lines
+11-10 08:12:13.918  1904  2573 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:13.920  3527  3527 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@acf11
+11-10 08:12:13.931  1904  1904 I NotificationService: Cannot find enqueued record for key: -1|android|8|null|1000
+11-10 08:12:13.961  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@98f4f49 in: PRE_ON_CREATE
+11-10 08:12:13.961  3527  3527 V ActivityScenario: Activity lifecycle changed event received but ignored because the reported transition was not ON_CREATE while the last known transition was PRE_ON_CREATE
+11-10 08:12:13.964  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@98f4f49 in: CREATED
+11-10 08:12:13.964  3527  3527 V ActivityScenario: Update currentActivityStage to CREATED, currentActivity=com.avatarsdev.tiktokupgrade.ui.MainActivity@98f4f49
+11-10 08:12:13.965  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@98f4f49 in: STARTED
+11-10 08:12:13.965  3527  3527 V ActivityScenario: Update currentActivityStage to STARTED, currentActivity=com.avatarsdev.tiktokupgrade.ui.MainActivity@98f4f49
+11-10 08:12:13.966  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@98f4f49 in: RESUMED
+11-10 08:12:13.966  3527  3527 V ActivityScenario: Update currentActivityStage to RESUMED, currentActivity=com.avatarsdev.tiktokupgrade.ui.MainActivity@98f4f49
+11-10 08:12:13.973  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:13.978  1904  1925 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:13.978  1904  1925 I chatty  : uid=1000(system) android.anim identical 8 lines
+11-10 08:12:13.978  1904  1925 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:14.020  2575  2777 D EGL_emulation: eglMakeCurrent: 0x7e40e63c8d00: ver 3 0 (tinfo 0x7e40e631e6c0)
+11-10 08:12:14.029  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:14.030  1697  1740 I chatty  : uid=1000(system) HwBinder:1697_2 identical 1 line
+11-10 08:12:14.030  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:14.040  3527  3551 D EGL_emulation: eglMakeCurrent: 0x7e4131a54dc0: ver 3 0 (tinfo 0x7e4131a185e0)
+11-10 08:12:14.046  1904  1929 I ActivityTaskManager: Displayed com.avatarsdev.tiktokupgrade/.ui.MainActivity: +150ms
+11-10 08:12:14.099  1904  3610 D HostConnection: HostConnection::get() New Host Connection established 0x7e40e07715a0, tid 3610
+11-10 08:12:14.103  1904  3610 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 08:12:14.104  1904  3610 D EGL_emulation: eglCreateContext: 0x7e40e081f060: maj 3 min 0 rcv 3
+11-10 08:12:14.104  1904  3610 D EGL_emulation: eglMakeCurrent: 0x7e40e081f060: ver 3 0 (tinfo 0x7e41313ebe60)
+11-10 08:12:14.227  1904  1971 I ActivityManager: Killing 2984:com.android.cellbroadcastreceiver/u0a61 (adj 985): empty #17
+11-10 08:12:14.261  1665  1665 I Zygote  : Process 2984 exited due to signal 9 (Killed)
+11-10 08:12:14.271  1904  1932 I libprocessgroup: Successfully killed process cgroup uid 10061 pid 2984 in 42ms
+11-10 08:12:15.244  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:16.001  1904  2487 E TaskPersister: File error accessing recents directory (directory doesn't exist?).
+11-10 08:12:17.333  1904  1971 I ActivityTaskManager: START u0 {act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.avatarsdev.tiktokupgrade.test/androidx.test.core.app.InstrumentationActivityInvoker$EmptyActivity} from uid 10116
+11-10 08:12:16.237  1697  1740 I chatty  : uid=1000(system) HwBinder:1697_2 identical 1 line
+11-10 08:12:17.319  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:17.337  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@98f4f49 in: PAUSED
+11-10 08:12:17.337  3527  3527 V ActivityScenario: Update currentActivityStage to PAUSED, currentActivity=com.avatarsdev.tiktokupgrade.ui.MainActivity@98f4f49
+11-10 08:12:17.337  1904  1919 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:17.339  1904  1919 I chatty  : uid=1000(system) Binder:1904_1 identical 48 lines
+11-10 08:12:17.339  1904  1919 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:17.339  3587  3587 W ActivityThread: handleWindowVisibility: no activity for token android.os.BinderProxy@30bf725
+11-10 08:12:17.355  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:17.359  1697  1740 I chatty  : uid=1000(system) HwBinder:1697_2 identical 1 line
+11-10 08:12:17.361  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:17.361  3587  3607 D EGL_emulation: eglMakeCurrent: 0x7e413141b6a0: ver 3 0 (tinfo 0x7e413149a900)
+11-10 08:12:17.363  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:17.364  1904  2505 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:17.372  1904  2505 I chatty  : uid=1000(system) Binder:1904_8 identical 18 lines
+11-10 08:12:17.372  1904  2505 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:17.386  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:17.396  1697  1740 I chatty  : uid=1000(system) HwBinder:1697_2 identical 2 lines
+11-10 08:12:17.397  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:17.398  2575  2777 D EGL_emulation: eglMakeCurrent: 0x7e40e63c8d00: ver 3 0 (tinfo 0x7e40e631e6c0)
+11-10 08:12:17.405  1904  1925 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:17.405  1904  1925 I chatty  : uid=1000(system) android.anim identical 8 lines
+11-10 08:12:17.405  1904  1925 W InputReader: Device has associated, but no associated display id.
+11-10 08:12:17.406  1697  1740 D gralloc_ranchu: gralloc_alloc: Creating ashmem region of size 823296
+11-10 08:12:17.428  3587  3607 D EGL_emulation: eglMakeCurrent: 0x7e413141b6a0: ver 3 0 (tinfo 0x7e413149a900)
+11-10 08:12:17.428  3527  3551 D EGL_emulation: eglMakeCurrent: 0x7e4131a54dc0: ver 3 0 (tinfo 0x7e4131a185e0)
+11-10 08:12:17.434  1710  1710 E Layer   : [Surface(name=AppWindowToken{6edfe3f token=Token{e47ca5e ActivityRecord{77cc799 u0 com.avatarsdev.tiktokupgrade/.ui.MainActivity t11}}})/@0x28c5b27 - animation-leash#0] No local sync point found
+11-10 08:12:17.434  1710  1710 E Layer   : [Surface(name=AppWindowToken{213cdf9 token=Token{34c7cc0 ActivityRecord{6e91e43 u0 com.android.launcher3/.Launcher t5}}})/@0xa6966a4 - animation-leash#0] No local sync point found
+11-10 08:12:17.443  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@98f4f49 in: STOPPED
+11-10 08:12:17.443  3527  3527 V ActivityScenario: Update currentActivityStage to STOPPED, currentActivity=com.avatarsdev.tiktokupgrade.ui.MainActivity@98f4f49
+11-10 08:12:17.454  3527  3527 D LifecycleMonitor: Lifecycle status change: com.avatarsdev.tiktokupgrade.ui.MainActivity@98f4f49 in: DESTROYED
+11-10 08:12:17.454  3527  3527 V ActivityScenario: Update currentActivityStage to DESTROYED, currentActivity=null
+11-10 08:12:17.456  3527  3547 D IdlingRegistry: Unregistering idling resources: [androidx.compose.ui.test.EspressoLink@875baa]
+11-10 08:12:17.462  3527  3547 I TestRunner: finished: c_realImport_5to6Nov_isSeparateFromSample(com.avatarsdev.tiktokupgrade.AppFlowTest)
+11-10 08:12:17.464  3527  3547 I TestRunner: run finished: 3 tests, 0 failed, 0 ignored
+11-10 08:12:17.471  1904  1971 W WindowManager: removeWindowToken: Attempted to remove non-existing token: android.os.Binder@85d55f
+11-10 08:12:17.472  1904  1904 V SettingsProvider: Notifying for 0: content://settings/secure/accessibility_enabled
+11-10 08:12:17.475  1904  3610 D HostConnection: HostConnection::get() New Host Connection established 0x7e40e07715a0, tid 3610
+11-10 08:12:17.475  1904  1904 V SettingsProvider: Notifying for 0: content://settings/system/accelerometer_rotation
+11-10 08:12:17.475  1904  1904 V SettingsProvider: Notifying for 0: content://settings/system/user_rotation
+11-10 08:12:17.476  1904  3610 D HostConnection: HostComposition ext ANDROID_EMU_CHECKSUM_HELPER_v1 ANDROID_EMU_native_sync_v2 ANDROID_EMU_dma_v1 ANDROID_EMU_direct_mem ANDROID_EMU_host_composition_v1 ANDROID_EMU_host_composition_v2 ANDROID_EMU_vulkan ANDROID_EMU_deferred_vulkan_commands ANDROID_EMU_vulkan_create_resources_with_requirements ANDROID_EMU_vulkan_free_memory_sync ANDROID_EMU_vulkan_shader_float16_int8 ANDROID_EMU_vulkan_async_queue_submit ANDROID_EMU_sync_buffer_data ANDROID_EMU_vulkan_async_qsri ANDROID_EMU_hwc_color_transform GL_OES_EGL_image_external_essl3 GL_OES_vertex_array_object GL_KHR_texture_compression_astc_ldr ANDROID_EMU_host_side_tracing ANDROID_EMU_gles_max_version_3_0 
+11-10 08:12:17.477  1904  3610 D EGL_emulation: eglCreateContext: 0x7e40e081f060: maj 3 min 0 rcv 3
+11-10 08:12:17.477  1904  3610 D EGL_emulation: eglMakeCurrent: 0x7e40e081f060: ver 3 0 (tinfo 0x7e41313ebe60)
+11-10 08:12:17.482  1904  2505 I ActivityManager: Force stopping com.avatarsdev.tiktokupgrade appid=10116 user=0: finished inst
+11-10 08:12:17.482  1904  2505 I ActivityManager: Killing 3527:com.avatarsdev.tiktokupgrade/u0a116 (adj 0): stop com.avatarsdev.tiktokupgrade
+11-10 08:12:17.494  1904  3649 W Binder  : Outgoing transactions from this process must be FLAG_ONEWAY
+11-10 08:12:17.494  1904  3649 W Binder  : java.lang.Throwable
+11-10 08:12:17.494  1904  3649 W Binder  : 	at android.os.BinderProxy.transact(BinderProxy.java:480)
+11-10 08:12:17.494  1904  3649 W Binder  : 	at android.app.IInstrumentationWatcher$Stub$Proxy.instrumentationFinished(IInstrumentationWatcher.java:205)
+11-10 08:12:17.494  1904  3649 W Binder  : 	at com.android.server.am.InstrumentationReporter$MyThread.run(InstrumentationReporter.java:86)
+11-10 08:12:17.495  3514  3514 D AndroidRuntime: Shutting down VM
+11-10 08:12:17.588  1904  1924 W ActivityManager: setHasOverlayUi called on unknown pid: 3527
+11-10 08:12:17.590  1665  1665 I Zygote  : Process 3527 exited due to signal 9 (Killed)
+11-10 08:12:17.621  1904  1932 I libprocessgroup: Successfully killed process cgroup uid 10116 pid 3527 in 134ms

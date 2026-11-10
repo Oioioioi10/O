@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.avatarsdev.tiktokupgrade.FeedPlannerAndScorerTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2026-11-10T08:10:20" hostname="runnervmwuk1x" time="0.19">
+  <properties/>
+  <testcase name="thaiExclusion_matches" classname="com.avatarsdev.tiktokupgrade.FeedPlannerAndScorerTest" time="0.154"/>
+  <testcase name="plan_matchesPercentages_andInterleaves" classname="com.avatarsdev.tiktokupgrade.FeedPlannerAndScorerTest" time="0.011"/>
+  <testcase name="rank_putsBlockedLast_andInterleaves" classname="com.avatarsdev.tiktokupgrade.FeedPlannerAndScorerTest" time="0.021"/>
+  <testcase name="scorer_blocksExcluded_andMatchesIncluded" classname="com.avatarsdev.tiktokupgrade.FeedPlannerAndScorerTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
